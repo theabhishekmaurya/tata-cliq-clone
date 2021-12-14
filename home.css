@@ -240,3 +240,98 @@
         #bottom>img {
             width: 160px;
         }
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #ececec;
+        }
+        .title{
+           width: 550px;
+           height: 150px;
+           margin: auto;
+           margin-top: 100px;
+           margin-bottom: 50px;
+           /* border: 1px solid red; */
+        }
+        .btn{
+            display: block;
+            text-align: center;
+            border: transparent;
+            outline: none;
+            height: 70px;
+           border-top-left-radius: 50px;
+           border-bottom-left-radius: 50px;
+           border-top-right-radius: 50px;
+           border-bottom-right-radius: 50px;
+           padding: 20px 30px;
+           letter-spacing: 5px;
+           color: white;
+           font-weight: bold;
+           font-size: 26px;
+           margin-bottom: 8px;
+           background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(145,0,1,0.9023984593837535) 0%);
+        }
+        .text{
+            margin-left: 170px;
+            color: #c86750;
+            font-size: 25px;
+        }
+        .navbtn{
+            width: 90px;
+            height: 40px;
+            display: flex;
+            margin-left: 1100px;
+            margin-bottom: 30px;
+        }
+        .navbtn>div{
+            width: 40px;
+            height: 100%;
+            margin: 1px;
+            border: transparent;
+            outline: none;
+            text-align: center;
+            padding: 5px 0px;
+            background-color: white;
+            font-size: 22px;
+        }
+        .first{
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .second{
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .boxes{
+            width: 1150px;
+            display: grid;
+            grid-template-columns: repeat(4,250px);
+            margin:auto;
+            grid-gap: 20px;
+            margin-bottom: 50px;
+        }
+        .boxes>div{
+           
+            margin-left: 30px;
+        }
+        .boxes>div>img{
+            width: 250px;
+            height: 330px;
+        }
+        .ml{
+            margin-left: 140px;
+        }
+        .boxes7{
+         width: 950px;
+         display: grid;
+         grid-template-columns: repeat(7,120px);
+         margin: auto;
+         grid-gap: 20px;
+         margin-bottom: 50px;
+        }
+       .boxes7>div>img{
+            width:120px
+        }
+        
