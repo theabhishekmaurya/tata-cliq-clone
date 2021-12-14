@@ -61,12 +61,14 @@
         width: 40%;
         justify-content: space-around;
         align-items: center;
+        cursor: pointer;
     }
     #buttomright{
         display: flex;
         width: 60%;
         align-items: center;
         margin-left: 30%;
+        cursor: pointer;
     }
     #buttomright>div{
         padding-left: 30px;
@@ -104,21 +106,21 @@
                     <div>Gift Card</div>
                     <div>CLiQ Care</div>
                     <div>Track Orders</div>
-                    <div>Sign In/Sign Up</div>   
+                    <div id="signin/up">Sign In/Sign Up</div>   
                    </div>
                 </div>
                 <div id="buttom">
                     <div id="buttomleft">
-                        <div>Categories<i class="fas fa-angle-down"></i></div>
-                        <div>Brands<i class="fas fa-angle-down"></i></div>
+                        <div>Categories<i class="fas fa-angle-down" id="categories"></i></div>
+                        <div>Brands<i class="fas fa-angle-down" id="brands"></i></div>
                     </div>
                     <div id="buttomright">
                         <div>
                             <input type="text" id="searchbar" placeholder="Search">
-                            <i class="fas fa-search"></i> 
+                            <i class="fas fa-search" id="search"></i> 
                         </div>
-                        <div><i class="far fa-bookmark"></i></div>
-                        <div><i class="fas fa-shopping-bag"></i></div>
+                        <div><i class="far fa-bookmark" id="bookmark"></i></div>
+                        <div><i class="fas fa-shopping-bag" id="bag"></i></div>
                     </div>
                 </div>
             </div>
