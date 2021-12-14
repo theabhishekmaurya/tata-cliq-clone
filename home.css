@@ -103,6 +103,7 @@
   height: 540px;
   display: none;
   margin-left: 24%;
+  background-color: white;
 }
 .catTitle {
   width: 250px;
@@ -395,3 +396,26 @@ body {
     line-height: 25px;
     font-size: 13px;
 }
+#containerbig{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+            }
+    
+            #containersmall {
+                display: flex;
+     margin: auto;
+     margin-top: 50PX;
+     
+                
+                 }
+                 #containersmall >div{
+                    
+                     margin-left: 10px
+                     
+                 } 
+            .pic1{
+                margin-left: 5px;
+                
+            }
