@@ -212,8 +212,8 @@
   margin: 0vh;
 }
 
-#top > img {
-  height: 500px;
+#top>img {
+  height: auto;
   width: 100%;
   border: 1px solid transparent;
 }
@@ -221,20 +221,28 @@
 #main img:hover {
   cursor: pointer;
 }
+
 #bottom {
-  height: 200px;
+  height: auto;
   width: 100%;
   border: 1px solid transparent;
   background-color: #ececec;
-  display: grid;
 
-  grid-template-columns: repeat(12, 1fr);
+}
+
+#bottominner {
+  border: 1px solid transparent;
+  height: auto;
+  width: 88%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
   justify-content: center;
   align-items: center;
-  grid-gap: 5px;
 }
-#bottom > img {
-  width: 160px;
+
+#bottominner>img {
+  width: 100%;
 }
 * {
   box-sizing: border-box;
