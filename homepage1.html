@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,27 +10,38 @@
         #main {
             margin: 0vh;
         }
+
         #top>img {
-           height:auto;
+            height: auto;
             width: 100%;
             border: 1px solid transparent;
         }
+
         #main img:hover {
             cursor: pointer;
         }
+
         #bottom {
             height: auto;
             width: 100%;
             border: 1px solid transparent;
             background-color: #ececec;
-            display: grid;
 
+        }
+
+        #bottominner {
+            border: 1px solid transparent;
+            height: auto;
+            width: 88%;
+            margin: auto;
+            display: grid;
             grid-template-columns: repeat(9, 1fr);
             justify-content: center;
             align-items: center;
         }
-        #bottom>img {
-            width:100% ;
+
+        #bottominner>img {
+            width: 100%;
         }
     </style>
 </head>
@@ -40,15 +52,18 @@
             <img src="https://assets.tatacliq.com/medias/sys_master/images/32067064561694.jpg" alt="">
         </div>
         <div id="bottom">
-            <img src="https://assets.tatacliq.com/medias/sys_master/images/32067060269086.jpg" alt="">
-            <img src="https://assets.tatacliq.com/medias/sys_master/images/32067062693918.jpg" alt="">
-            <img src="https://assets.tatacliq.com/medias/sys_master/images/32067059810334.jpg" alt="">
-            <img src="https://assets.tatacliq.com/medias/sys_master/images/32067059875870.jpg" alt="">
-            <img src="https://assets.tatacliq.com/medias/sys_master/images/32067060203550.jpg" alt="">
-            <img src="https://assets.tatacliq.com/medias/sys_master/images/32067059941406.jpg" alt="">
-            <img src="https://assets.tatacliq.com/medias/sys_master/images/32067060006942.jpg" alt="">
-            <img src="https://assets.tatacliq.com/medias/sys_master/images/32067060072478.jpg" alt="">
-            <img src="https://assets.tatacliq.com/medias/sys_master/images/32067060138014.jpg" alt="">
+            <div id="bottominner">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/32067060269086.jpg" alt="">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/32067062693918.jpg" alt="">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/32067059810334.jpg" alt="">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/32067059875870.jpg" alt="">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/32067060203550.jpg" alt="">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/32067059941406.jpg" alt="">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/32067060006942.jpg" alt="">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/32067060072478.jpg" alt="">
+                <img src="https://assets.tatacliq.com/medias/sys_master/images/32067060138014.jpg" alt="">
+            </div>
+           
         </div>
     </div>
 </body>
