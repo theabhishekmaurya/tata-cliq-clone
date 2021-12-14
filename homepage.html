@@ -1,236 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/all.css">
-    <title>Online Shopping Site for Electronic Products, Lifestyle, Beauty & Home - Tata CLiQ</title>
-    
-</head>
-<style>
-    
-    #navbar{
-        width: 100vw;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    #headermain{
-        display: flex;
-        width: 100%;
-        height:100px;
-    }
-    #left{
-        width: 25%;
-        background:#212121 ;
-    }
-    #tataicon{
-        margin-left:35%;
-    }
-    #right{
-        width: 75%;
-    }
-    #top{
-        display: flex;
-        height: 40%;
-        background: #000000;
-        color: white;
-        justify-content: space-around;
-        font-size: 12px;
-        font-weight: bold;
-    }
-    #topleft{
-      width: 20%;
-      padding: 10px;
-      margin-left: 0px;
-      cursor: pointer;
-    }
-     #topright{
-      width: 50%;
-      display: flex;
-      justify-content: space-around;
-      padding: 10px;
-      cursor: pointer;
-    } 
-    #buttom{
-        display: flex;
-        height: 60%;
-        background:#212121 ;
-        color: white;
-        font-weight: bold;
-    }
-    #buttomleft{
-        display: flex;
-        width: 40%;
-        justify-content: space-around;
-        align-items: center;
-        cursor: pointer;
-    }
-    #buttomright{
-        display: flex;
-        width: 60%;
-        align-items: center;
-        margin-left: 30%;
-        cursor: pointer;
-    }
-    #buttomright>div{
-        padding-left: 30px;
-    }
-    #searchbar{
-        background: #212121;
-        border: none;
-        border-bottom: 1px solid #fff;
-        color: white;
-    }
-    #categories:hover,#brands:hover{
-        background-color: white;
-        color: black;
-    }
-    #categories,#brands{
-        display: flex;
-        height: 100%;
-        width: 130px;
-        justify-content: center;
-        
-    }
-    .fa-angle-down{
-      font-size: 20px;
-    }
-    .fa-search{
-        font-size:20px ;
-    }
-    .fa-bookmark{
-        font-size: 20px;
-    }
-    .fa-shopping-bag{
-        font-size: 20px;
-    }
-
-    #brand,#category{
-            /* border: 1px solid black; */
-            position: absolute;
-            width: 1000px;
-            height: 540px;
-            display: none;
-            margin-left: 24%;
-        }
-        .catTitle{
-            width: 250px;
-            height: 100%;
-            margin-left: 20px;
-            /* border: 1px solid red; */
-        }
-        .catHead{
-            font-family: sans-serif;
-            font-size: 17px;
-            color:gray;
-            margin-top: 22px;
-            margin-bottom: 22px;
-        }
-        .catHead:hover{
-            color: black;
-            cursor: pointer;
-        }
-        #items{
-            /* border: 1px solid blue; */
-            width: 720px;
-            margin-left: 30px;
-            display: flex;
-        }
-        .catList{
-            /* border: 1px solid red; */
-            width: 200px;
-            font-family: sans-serif;
-            color: gray;
-            font-weight:lighter;
-            line-height: 35px;
-        }
-        .catList>h4{
-
-            color: black;
-
-            margin-bottom: 0px;
-            margin-top: 5px;
-        }
-        #imgDiv{
-            /* border: 1px solid blue; */
-            width: 100%;
-            height: 65%;
-            margin-top: 30%;
-            display: grid;
-            grid-template-columns: repeat(2,auto);
-            background-color: rgb(239, 243, 245);
-        }
-        #imgDiv>img{
-            border-radius: 50%;
-            margin-left: 20px;
-        }
-
-        .signup {
-            height: 320px;
-            width: 200px;
-            border: 1px solid 
-            transparent;
-            display: none;
-            /* border: 1px solid blue; */
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            margin-left: 55%;
-            background-color: white;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-        }
-
-        .signup>:nth-child(1) {
-
-            background-color: red;
-            border-radius: 30px;
-            height: 30px;
-            color: white;
-            display: flex;
-            text-align: center;
-            
-            
-        }
-        .signup>:nth-child(1)>p{
-            color: white;
-            margin-left: 33px;
-        }
-
-        .signup>div {
-            width: 180px;
-            height: 40px;
-            border: 1px solid 
-            transparent;
-            display: flex;
-            align-items: center;
-
-        }
-        .signup>p{
-            padding-left: 10px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-style: normal;
-            font-size: 18px;
-            color: #212121;
-        }
-        .signup>div>p{
-            color: black;
-            font-weight: lighter;
-        }
-        .signup>div>img {
-            height: 25px;
-            width: 20px;
-            margin-right: 10px;
-            margin-left:10px;
-        }
-</style>
-<body >
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/all.css">
+        <title>Online Shopping Site for Electronic Products, Lifestyle, Beauty & Home - Tata CLiQ</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+<body>
     <div id="navbar">
         <div id="headermain">
-
-            <div id="left"><img src="tatacliq icon.png" alt="" height="90px" width="150px" id="tataicon"></div>
-
             <div id="left"><img src="tatacliq icon.png" alt="" height="90px" width="130px" id="tataicon"></div>
-
             <div id="right">
                 <div id="top">
                    <div id="topleft">
@@ -241,52 +22,14 @@
                     <div>Gift Card</div>
                     <div>CLiQ Care</div>
                     <div>Track Orders</div>
-
-                    <div style="height: 30px;" id="signin_up">Sign In/Sign Up</div> 
-                      
-                   </div>
-                   
                     <div id="signin/up">Sign In/Sign Up</div>   
                    </div>
-
                 </div>
                 <div id="buttom">
                     <div id="buttomleft">
                         <div id="categories"><p style="font-size: 15px;">Categories <i class="fas fa-angle-down" "></i></p></div>
                         <div  id="brands"><p style="font-size: 15px;">Brands <i class="fas fa-angle-down"></i></p></div>
                     </div>
-<<<<<<< HEAD
-                    <div class="signup">
-                        <div><p style="color: white;">Login/Register</p>
-                            </div>
-                        <div>
-                            <img src="https://www.tatacliq.com/src/general/components/img/profile.39b59dc38fd3.png" alt="">
-                            <p>My account</p>
-                        </div>
-                        <div>
-                            <img src="https://www.tatacliq.com/src/general/components/img/order-history.a92cd34e19fa.svg" alt="">
-                           <p> Order Histery</p>
-                        </div>
-                        <div>
-                            <img src="https://www.tatacliq.com/src/general/components/img/download.31e3d505d91e.svg" alt="">
-                           <p>Saved List</p>
-                        </div>
-                        <div>
-                            <img src="https://www.tatacliq.com/src/account/components/img/alert.89aa376e9ac0.svg" alt="">
-                        <p>Alerts &Coupons</p>
-                        </div>
-                        <div>
-                            <img src="https://www.tatacliq.com/src/account/components/img/giftCards.c9b393b81026.svg" alt="">
-                        <p>Gift Card</p>
-                        </div>
-                        <div>
-                            <img src="https://www.tatacliq.com/src/account/components/img/cliqCash.89de362374b9.svg" alt="">
-                        <p>CLiQ Cash</p>
-                        </div>
-                
-                    </div>
-=======
->>>>>>> 0ccd87c7e691cd3caf56b05facfbdecab27775e3
                     <div id="buttomright">
                         <div>
                             <input type="text" id="searchbar" placeholder="Search">
@@ -319,15 +62,7 @@
             </div>
             <div id="items">
                 <div class="catList">
-
-
                     <h4>Popular Brands</h4>
-
-                    <h4 class="blackcolor">Popular Brands</h4>
-
-
-                    <h4 >Popular Brands</h4>
-
                     LG <br>
                     Samsung <br>
                     Sony <br>
@@ -343,15 +78,7 @@
                     Havells <br>
                 </div>
                 <div class="catList">
-
-
                     <h4>Featured Brands</h4>
-
-                    <h4 class="blackcolor">Featured Brands</h4>
-
-
-                    <h4 >Featured Brands</h4>
-
                     VU <br>
                     Lloyd <br>
                     TCL <br>
@@ -379,11 +106,6 @@
             </div>
         </div>
 
-
-        
-
-
-
         <div id="category">
             <div class="catTitle">
                 <h3 class="catHead">Men's Fashion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></h3>
@@ -404,15 +126,7 @@
             </div>
             <div id="items">
                 <div class="catList">
-
-
                     <h4>Footwear</h4>
-
-                    <h4 class="blackcolor">Footwear</h4>
-
-
-                    <h4 >Footwear</h4>
-
                     Casual Shoes <br>
                     Sneakers <br>
                     Formal Shoes <br>
@@ -421,22 +135,10 @@
                     Sports Shoes <br>
                     Boots <br>
                     Flip Flop <br>
-
                     <h4>Ethnic Wear</h4>
                     Kurta <br>
                     Kurta sets<br>
                     <h4>Clothing</h4>
-
-                    <h4 class="blackcolor">Ethnic Wear</h4>
-                    Kurta <br>
-                    Kurta sets<br>
-                    <h4 class="blackcolor">Clothing</h4>
-
-                    <h4 >Ethnic Wear</h4>
-                    Kurta <br>
-                    Kurta sets<br>
-                    <h4 >Clothing</h4>
-
                     T-shirts & Polos <br>
                     Casual Shirts<br>
                 </div>
@@ -448,19 +150,9 @@
                     Casual Jackets <br>
                     Formal Shirts <br>
                     Formal Trousers <br>
-
                     <h4>Inner & Nightwear </h4>
                     <h4>View All Clothing </h4>
                     <h4>Sports Wear </h4>
-
-                    <h4 class="blackcolor">Inner & Nightwear </h4>
-                    <h4 class="blackcolor">View All Clothing </h4>
-                    <h4 class="blackcolor">Sports Wear </h4>
-
-                    <h4 >Inner & Nightwear </h4>
-                    <h4 >View All Clothing </h4>
-                    <h4 >Sports Wear </h4>
-
                     T-shirts & Jerseys <br>
                     Shorts <br>
                     Sports Jackets <br>
@@ -468,28 +160,15 @@
                     Trunks <br>
                 </div>
                 <div style="width:220px" class="catList">
-
                     <h4>Watches</h4>
-
-                    <h4 class="blackcolor">Watches</h4>
-
-                    <h4 >Watches</h4>
                     Smart Watches <br>
                     Workwear Watches <br>
                     Casual Watches <br>
                     Partywear Watches <br>
                     Digital watches <br>
                     Multifunctional watches <br>
-
                     <h4>The Watch Store</h4>
                     <h4>Bags & Backpacks</h4>
-                    <h4 class="blackcolor">The Watch Store</h4>
-                    <h4 class="blackcolor">Bags & Backpacks</h4>
-
-
-                    <h4 >The Watch Store</h4>
-                    <h4 >Bags & Backpacks</h4>
-
                     Backpacks <br>
                     Wallets <br>
                     Messenger Bags <br>
@@ -500,22 +179,12 @@
                 <div class="catList">
                     Duffle Bags <br>
                     Rucksack & Trekking Backpacks <br>
-
-
                     <h4>Fashion Accessories</h4>
-
-                    <h4 class="blackcolor">Fashion Accessories</h4>
-
-
-                    <h4 >Fashion Accessories</h4>
-
                     Belts <br>
                     Hats & Caps <br>
                     Ties & Cufflinks <br>
                     Writing Instruments <br>
                     Men's Gift Sets <br>
-
-
                     <h4>Jewellery</h4>
                     Mens Jewellery <br>
                     Coins and Bars <br>
@@ -523,65 +192,10 @@
                     Aviator
             </div>
         </div>
-        
-
-
-                    <h4 class="blackcolor">Jewellery</h4>
-
-                    <h4 >Jewellery</h4>
-
-                    Mens Jewellery <br>
-                    Coins and Bars <br>
-                    <h4 >Sunglasses</h4>
-                    Aviator
-            </div>
-        </div>
-
     </div>
 </body>
 </html>
 
-<script>
-    document.querySelector("#categories").addEventListener("mouseover",function(){
-        document.querySelector("#category").style.display="flex";
-    })
-
-    document.querySelector("#category").addEventListener("mouseover",function(){
-        document.querySelector("#category").style.display="flex";
-    })
-    document.querySelector("#category").addEventListener("mouseout",function(){
-        document.querySelector("#category").style.display="none";
-    })
-    document.querySelector("#categories").addEventListener("mouseout",function(){
-        document.querySelector("#category").style.display="none";
-    })
-
-    document.querySelector("#brands").addEventListener("mouseover",function(){
-        document.querySelector("#brand").style.display="flex";
-    })
-
-    document.querySelector("#brand").addEventListener("mouseover",function(){
-        document.querySelector("#brand").style.display="flex";
-    })
-    document.querySelector("#brand").addEventListener("mouseout",function(){
-        document.querySelector("#brand").style.display="none";
-    })
-    document.querySelector("#brands").addEventListener("mouseout",function(){
-        document.querySelector("#brand").style.display="none";
-    })
-
-
-    document.querySelector("#signin_up").addEventListener("mouseover", function(){
-        document.querySelector(".signup").style.display="grid"
-    })
-    document.querySelector("#signin_up").addEventListener("mouseout", function(){
-        document.querySelector(".signup").style.display="none"
-    })
-    document.querySelector(".signup").addEventListener("mouseover", function(){
-        document.querySelector(".signup").style.display="grid"
-    })
-    document.querySelector(".signup").addEventListener("mouseout", function(){
-        document.querySelector(".signup").style.display="none"
-    })
+<script src="home.js">
 
 </script>
