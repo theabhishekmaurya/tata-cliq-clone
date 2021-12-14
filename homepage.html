@@ -145,7 +145,7 @@
             line-height: 35px;
         }
         .catList>h4{
-            /* color: black; */
+            color: black;
             margin-bottom: 0px;
             margin-top: 5px;
         }
@@ -162,11 +162,69 @@
             border-radius: 50%;
             margin-left: 20px;
         }
+
+        .signup {
+            height: 320px;
+            width: 200px;
+            border: 1px solid 
+            transparent;
+            display: none;
+            /* border: 1px solid blue; */
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            margin-left: 55%;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+
+        .signup>:nth-child(1) {
+
+            background-color: red;
+            border-radius: 30px;
+            height: 30px;
+            color: white;
+            display: flex;
+            text-align: center;
+            
+            
+        }
+        .signup>:nth-child(1)>p{
+            color: white;
+            margin-left: 33px;
+        }
+
+        .signup>div {
+            width: 180px;
+            height: 40px;
+            border: 1px solid 
+            transparent;
+            display: flex;
+            align-items: center;
+
+        }
+        .signup>p{
+            padding-left: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: normal;
+            font-size: 18px;
+            color: #212121;
+        }
+        .signup>div>p{
+            color: black;
+            font-weight: lighter;
+        }
+        .signup>div>img {
+            height: 25px;
+            width: 20px;
+            margin-right: 10px;
+            margin-left:10px;
+        }
 </style>
 <body >
     <div id="navbar">
         <div id="headermain">
-            <div id="left"><img src="tatacliq icon.png" alt="" height="90px" width="130px" id="tataicon"></div>
+            <div id="left"><img src="tatacliq icon.png" alt="" height="90px" width="150px" id="tataicon"></div>
             <div id="right">
                 <div id="top">
                    <div id="topleft">
@@ -177,13 +235,44 @@
                     <div>Gift Card</div>
                     <div>CLiQ Care</div>
                     <div>Track Orders</div>
-                    <div id="signin/up">Sign In/Sign Up</div>   
+                    <div style="height: 30px;" id="signin_up">Sign In/Sign Up</div> 
+                      
                    </div>
+                   
                 </div>
                 <div id="buttom">
                     <div id="buttomleft">
                         <div id="categories"><p style="font-size: 15px;">Categories <i class="fas fa-angle-down" "></i></p></div>
                         <div  id="brands"><p style="font-size: 15px;">Brands <i class="fas fa-angle-down"></i></p></div>
+                    </div>
+                    <div class="signup">
+                        <div><p style="color: white;">Login/Register</p>
+                            </div>
+                        <div>
+                            <img src="https://www.tatacliq.com/src/general/components/img/profile.39b59dc38fd3.png" alt="">
+                            <p>My account</p>
+                        </div>
+                        <div>
+                            <img src="https://www.tatacliq.com/src/general/components/img/order-history.a92cd34e19fa.svg" alt="">
+                           <p> Order Histery</p>
+                        </div>
+                        <div>
+                            <img src="https://www.tatacliq.com/src/general/components/img/download.31e3d505d91e.svg" alt="">
+                           <p>Saved List</p>
+                        </div>
+                        <div>
+                            <img src="https://www.tatacliq.com/src/account/components/img/alert.89aa376e9ac0.svg" alt="">
+                        <p>Alerts &Coupons</p>
+                        </div>
+                        <div>
+                            <img src="https://www.tatacliq.com/src/account/components/img/giftCards.c9b393b81026.svg" alt="">
+                        <p>Gift Card</p>
+                        </div>
+                        <div>
+                            <img src="https://www.tatacliq.com/src/account/components/img/cliqCash.89de362374b9.svg" alt="">
+                        <p>CLiQ Cash</p>
+                        </div>
+                
                     </div>
                     <div id="buttomright">
                         <div>
@@ -260,6 +349,8 @@
                 </div>
             </div>
         </div>
+
+        
 
         <div id="category">
             <div class="catTitle">
@@ -347,6 +438,8 @@
                     Aviator
             </div>
         </div>
+        
+
     </div>
 </body>
 </html>
@@ -378,5 +471,18 @@
     })
     document.querySelector("#brands").addEventListener("mouseout",function(){
         document.querySelector("#brand").style.display="none";
+    })
+
+    document.querySelector("#signin_up").addEventListener("mouseover", function(){
+        document.querySelector(".signup").style.display="grid"
+    })
+    document.querySelector("#signin_up").addEventListener("mouseout", function(){
+        document.querySelector(".signup").style.display="none"
+    })
+    document.querySelector(".signup").addEventListener("mouseover", function(){
+        document.querySelector(".signup").style.display="grid"
+    })
+    document.querySelector(".signup").addEventListener("mouseout", function(){
+        document.querySelector(".signup").style.display="none"
     })
 </script>
