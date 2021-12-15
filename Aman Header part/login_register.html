@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login/register</title>
+    <style>
+      #container_login{
+       display: flex;
+       flex-direction: column;
+       width: 500px;
+       height: 600px;
+       margin: auto;
+       margin-top: 100px; 
+       border-radius: 45px; 
+       font-family: sans-serif;
+       background: white;
+       border: 1px solid red;
+      }
+      #login_close_btn{
+        width: 30px;
+        height: 25px;
+        border: none;
+        background: white;
+        color: grey;
+        font-size: 23px;
+        font-weight:500px;
+        margin: 40px 50px 0px 430px;
+        cursor: pointer;
+      }
+      #welcome_login{
+        width: 400px;
+        height: 150px;
+        text-align: center;
+        line-height: 20px;
+        margin-left: 50px;
+      }
+      #welcome_login>p{
+        color: grey;
+      }
+      #mobile_number{
+        display: flex;
+        align-items: center;
+        border: 1px solid grey;
+        width: 300px;
+        height: 35px;
+        margin-left: 100px;
+      }
+      #mobile_number>p{
+        margin-left: 15px;
+      }
+      #mobile_number>input{
+        margin-left: 30px;
+        border: none;
+        outline: none;
+      }
+      #email_add{
+        color: crimson;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 30px;
+        cursor: pointer;
+      }
+      #term_policy{
+        width:300px;
+        margin-left: 90px;
+        margin-top:50px ;
+        font-size: 12px;
+        color: grey;
+      }
+      #term_policy>span{
+        color: crimson;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      #continue_btn{
+        border: none;
+        background: rgb(146,37,105);
+background: linear-gradient(175deg, rgba(146,37,105,1) 35%, rgba(201,60,88,1) 66%);
+        width: 350px;
+        margin-top: 30px;
+        margin-left: 90px;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      #continue_btn:hover{
+        background: rgb(146,37,105);
+background: linear-gradient(175deg, rgba(146,37,105,1) 24%, rgba(201,60,88,1) 99%);
+      }
+    </style>
+</head>
+<body>
+    <div id="container_login">
+
+       <button id="login_close_btn">X</button>
+
+       <div id="welcome_login">
+         <h1>Welcome to Tata</h1>
+         <h1>CLiQ</h1>
+         <p>Please enter your mobile number</p>
+       </div>
+
+       <div id="mobile_number">
+         <p>+91</p>
+        <input  type="tel" id="mobile_number_input" maxlength="10"  placeholder="Mobile Number">
+      </div>
+
+       <div id="email_add">Use Email Address</div>
+      
+      <div id="term_policy">
+        By continue you are agree to our <span>Terms of Service</span> & <span>Privacy Policy</span>
+      </div>
+
+      <button id="continue_btn">Continue</button>
+
+    </div>
+</body>
+</html>
+
