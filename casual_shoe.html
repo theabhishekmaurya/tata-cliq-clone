@@ -60,7 +60,6 @@
         }
         .right_box{
            width: 75%;
-           border: 1px solid teal;
            margin-left: 30px;
         }
         .first_row{
@@ -109,7 +108,7 @@
        .right_box>div{
            width:230px;
            height: 400px;
-           border: 1px solid red;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
        }
        .right_box>div>img{
            width: 230px;
@@ -117,15 +116,29 @@
            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
            padding: 0px 5px;
        }
+       .right_box>div>img:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       }
        .right_box>div>p,span{
            padding-left: 5px;
        }
        .right_box>div>span:nth-child(2n){
            margin-left: 4px;
            text-decoration: line-through;
-           color:#9b9b9b
+           color:#9b9b9b;
+       }
+       .right_box>div>button{
+           display: block;
+           margin-top: 5px;
+           background-color: darkgreen;
+           border: transparent;
+           outline: none;
+           margin-left: 5px;
+           margin-bottom: 5px;
        }
        #sort{
+           display: flex;
+           justify-content: space-between;
            width: 25%;
            border:1px solid #9b9b9b ;
            height: 40px;
@@ -140,6 +153,9 @@
         #right{
             font-size: 18px;
         }
+        .right>img{
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
@@ -148,7 +164,18 @@
       <span id="total_prod">3167 products</span>
   </div>
   <div id="sort">
-      <span id="left">Sort By:</span><span id="right">Popularity</span>
+      <!-- <span id="left">Sort By:</span><span id="right">Popularity</span> -->
+      <div class="left">
+        <span>Sort By:</span><span>Popularity</span>
+      </div>
+      <div class="right">
+          <img src="https://www.tatacliq.com/src/general/components/img/sortIcon.44a2548639d1.svg" alt="">
+          <select name="" id="">
+              <option value="">---</option>
+              <option value="low">Low to High</option>
+              <option value="high">High to low</option>
+          </select>
+      </div>
   </div>
   <div class="navmenu">
       <ol>
@@ -243,6 +270,43 @@
         product:"shoe",
         Newprice:" Rs 2249",
         oldPrice:"4499",
+        button: "3.5⭐",
+    },
+    {
+        img:"https://img.tatacliq.com/images/i2/437Wx649H/MP000000002056178_437Wx649H_20171125205630.jpeg",
+        brand:"Red chief",
+        title:"Red chief casual shoe",
+        product:"shoe",
+        Newprice:" Rs 2249",
+        oldPrice:"4499",
+        button: "3.5⭐",
+    },
+    {
+        img:"https://img.tatacliq.com/images/i2/437Wx649H/MP000000002056178_437Wx649H_20171125205630.jpeg",
+        brand:"Red chief",
+        title:"Red chief casual shoe",
+        product:"shoe",
+        Newprice:" Rs 2249",
+        oldPrice:"4499",
+        button: "3.5⭐",
+    },
+    {
+        img:"https://img.tatacliq.com/images/i2/437Wx649H/MP000000002056178_437Wx649H_20171125205630.jpeg",
+        brand:"Red chief",
+        title:"Red chief casual shoe",
+        product:"shoe",
+        Newprice:" Rs 2249",
+        oldPrice:"4499",
+        button: "3.5⭐",
+    },
+    {
+        img:"https://img.tatacliq.com/images/i2/437Wx649H/MP000000002056178_437Wx649H_20171125205630.jpeg",
+        brand:"Red chief",
+        title:"Red chief casual shoe",
+        product:"shoe",
+        Newprice:" Rs 2249",
+        oldPrice:"4499",
+        button: "3.5⭐",
     },
     
     
@@ -263,7 +327,9 @@
             span.textContent=elem.Newprice
             var span2=document.createElement("span");
             span2.textContent=elem.oldPrice;
-            div.append(img,para,para2,para3,span,span2);
+            var btn=document.createElement("button");
+            btn.textContent=elem.button;
+            div.append(img,para,para2,para3,span,span2,btn);
             document.querySelector(".right_box").append(div);
         })
     }
