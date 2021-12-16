@@ -1,12 +1,4 @@
-var data=[{
-    img:"https://img.tatacliq.com/images/i2/437Wx649H/MP000000002056178_437Wx649H_20171125205630.jpeg",
-    brand:"Red chief",
-    title:"Red chief casual shoe",
-    product:"shoe",
-    Newprice:" 2249",
-    oldPrice:"4499",
-    button: "3.5⭐",
-},
+var data=[
 {
     img:"https://img.tatacliq.com/images/i6/437Wx649H/MP000000007787552_437Wx649H_202009231812331.jpeg",
     brand:"Red Tape",
@@ -14,7 +6,7 @@ var data=[{
     product:"Loafers",
     Newprice:" 1590",
     oldPrice:"6399",
-    button: "3.9⭐",
+    button: "3.9⭐",   
 },
 {
     img:"https://img.tatacliq.com/images/i7/437Wx649H/MP000000007024403_437Wx649H_202112101744311.jpeg",
@@ -194,14 +186,14 @@ function display(){
         var para3=document.createElement("p");
         para3.textContent=elem.product
         var span=document.createElement("span");
-        span.textContent=elem.Newprice
+        span.textContent=  "₹"+elem.Newprice;
         var span2=document.createElement("span");
-        span2.textContent=elem.oldPrice;
+        span2.textContent="₹"+elem.oldPrice;
         var btn=document.createElement("button");
         btn.textContent=elem.button;
         btn.setAttribute("id","first_btn");
         var btn2=document.createElement("button");
-        btn2.textContent="Add to cart";
+        btn2.textContent="Add to Cart";
         btn2.setAttribute("id","second_btn");
         btn2.addEventListener("click",function(){
             cart.push(elem);
@@ -229,5 +221,6 @@ function display(){
        display(data);
    }
 
+   
   
 }
