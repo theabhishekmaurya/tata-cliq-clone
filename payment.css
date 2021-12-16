@@ -10,8 +10,12 @@
 #checkouter img,
 h2,
 p,
-input:hover {
+input,button:hover {
     cursor: pointer;
+}
+button:hover{
+    background-color:deeppink;
+    
 }
 
 #checkinner {
