@@ -27,10 +27,10 @@ document.querySelector("#brands").addEventListener("mouseout",function(){
 })
 
 
-document.querySelector("#signin_up").addEventListener("mouseover", function(){
+document.querySelector("#my_account").addEventListener("mouseover", function(){
     document.querySelector(".signup").style.display="grid"
 })
-document.querySelector("#signin_up").addEventListener("mouseout", function(){
+document.querySelector("#my_account").addEventListener("mouseout", function(){
     document.querySelector(".signup").style.display="none"
 })
 document.querySelector(".signup").addEventListener("mouseover", function(){
@@ -39,6 +39,6 @@ document.querySelector(".signup").addEventListener("mouseover", function(){
 document.querySelector(".signup").addEventListener("mouseout", function(){
     document.querySelector(".signup").style.display="none"
 })
-document.querySelector("#loginbtn").addEventListener("click",function(){
-    window.location.href="login_register.html"
+document.querySelector("#my_account").addEventListener("click",function(){
+    window.location.href="myaccount.html"
 })
