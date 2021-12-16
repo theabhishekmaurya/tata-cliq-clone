@@ -77,9 +77,7 @@ body{
     padding-left: 10px;
     margin-bottom: 10px;
 }
-.row>h4{
-    /* font-size: 19px; */
-}
+
 .row>p{
    padding-left: 18px;
    display: inline;

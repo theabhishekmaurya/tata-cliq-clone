@@ -171,7 +171,7 @@ var data=[
     button: "3.9⭐",
 },
 ]
-var cart=[];
+var cart= JSON.parse(localStorage.getItem("cart_history"))||[];
 display(data);
 function display(){
     document.querySelector(".right_box").textContent="";
@@ -221,6 +221,6 @@ function display(){
        display(data);
    }
 
-   
+
   
 }
