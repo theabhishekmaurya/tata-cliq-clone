@@ -106,6 +106,78 @@ var data=[{
     oldPrice:"4499",
     button: "5⭐",
 },
+{
+    img:"https://img.tatacliq.com/images/i7/437Wx649H/MP000000008552928_437Wx649H_202101132212361.jpeg",
+    brand:"Red chief",
+    title:"Red chief casual shoe",
+    product:"shoe",
+    Newprice:" Rs 2249",
+    oldPrice:"4499",
+    button: "5⭐",
+},
+{
+    img:"https://img.tatacliq.com/images/i7/437Wx649H/MP000000008552928_437Wx649H_202101132212361.jpeg",
+    brand:"Red chief",
+    title:"Red chief casual shoe",
+    product:"shoe",
+    Newprice:" Rs 2249",
+    oldPrice:"4499",
+    button: "5⭐",
+},
+{
+    img:"https://img.tatacliq.com/images/i7/437Wx649H/MP000000008552928_437Wx649H_202101132212361.jpeg",
+    brand:"Red chief",
+    title:"Red chief casual shoe",
+    product:"shoe",
+    Newprice:" Rs 2249",
+    oldPrice:"4499",
+    button: "5⭐",
+},
+{
+    img:"https://img.tatacliq.com/images/i7/437Wx649H/MP000000008552928_437Wx649H_202101132212361.jpeg",
+    brand:"Red chief",
+    title:"Red chief casual shoe",
+    product:"shoe",
+    Newprice:" Rs 2249",
+    oldPrice:"4499",
+    button: "5⭐",
+},
+{
+    img:"https://img.tatacliq.com/images/i7/437Wx649H/MP000000008552928_437Wx649H_202101132212361.jpeg",
+    brand:"Red chief",
+    title:"Red chief casual shoe",
+    product:"shoe",
+    Newprice:" Rs 2249",
+    oldPrice:"4499",
+    button: "5⭐",
+},
+{
+    img:"https://img.tatacliq.com/images/i7/437Wx649H/MP000000008552928_437Wx649H_202101132212361.jpeg",
+    brand:"Red chief",
+    title:"Red chief casual shoe",
+    product:"shoe",
+    Newprice:" Rs 2249",
+    oldPrice:"4499",
+    button: "5⭐",
+},
+{
+    img:"https://img.tatacliq.com/images/i7/437Wx649H/MP000000008552928_437Wx649H_202101132212361.jpeg",
+    brand:"Red chief",
+    title:"Red chief casual shoe",
+    product:"shoe",
+    Newprice:" Rs 2249",
+    oldPrice:"4499",
+    button: "5⭐",
+},
+{
+    img:"https://img.tatacliq.com/images/i7/437Wx649H/MP000000008552928_437Wx649H_202101132212361.jpeg",
+    brand:"Red chief",
+    title:"Red chief casual shoe",
+    product:"shoe",
+    Newprice:" Rs 2249",
+    oldPrice:"4499",
+    button: "5⭐",
+},
 
 
 ]
@@ -127,6 +199,7 @@ function display(){
         span2.textContent=elem.oldPrice;
         var btn=document.createElement("button");
         btn.textContent=elem.button;
+        btn.setAttribute("id","first_btn")
         div.append(img,para,para2,para3,span,span2,btn);
         document.querySelector(".right_box").append(div);
     })
