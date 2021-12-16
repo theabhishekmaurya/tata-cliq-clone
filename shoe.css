@@ -11,6 +11,7 @@ body{
     margin-bottom: 0px;
     margin-top: 40px;
     margin-bottom: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #casual_shoe{
     font-size: 30px;
@@ -100,16 +101,17 @@ body{
    display: grid;
    grid-template-columns: repeat(4,1fr);
    grid-template-rows: 400px;
-   grid-gap: 5px;
+   grid-gap: 10px;
    height: auto;
 }
 .right_box>div{
-   width:230px;
-   height: 400px;
+   width:235px;
+   height: auto;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   line-height: 10px;
 }
 .right_box>div>img{
-   width: 240px;
+   width: 235px;
    height: 230px;
    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -124,7 +126,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    text-decoration: line-through;
    color:#9b9b9b;
 }
-.right_box>div>button{
+#first_btn{
    display: block;
    margin-top: 5px;
    background-color: darkgreen;
@@ -132,6 +134,17 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    outline: none;
    margin-left: 5px;
    margin-bottom: 5px;
+}
+#second_btn{
+    margin-left: 60px;
+    background-color: darkgoldenrod;
+    border: transparent;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: white;
 }
 #sort{
    display: flex;
