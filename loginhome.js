@@ -39,3 +39,6 @@ document.querySelector(".signup").addEventListener("mouseover", function(){
 document.querySelector(".signup").addEventListener("mouseout", function(){
     document.querySelector(".signup").style.display="none"
 })
+document.querySelector("#my_account").addEventListener("click",function(){
+    window.location.href="myaccount.html"
+})

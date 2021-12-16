@@ -173,14 +173,24 @@
 .signup > :nth-child(1) {
   background-color: red;
   border-radius: 30px;
+  border: none;
   height: 30px;
   color: white;
   display: flex;
   text-align: center;
 }
+.signup > :nth-child(1):hover{
+  cursor: pointer;
+  height:32px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
 .signup > :nth-child(1) > p {
   color: white;
   margin-left: 33px;
+}
+#signin_up{
+  /* border: 1px solid; */
+  height: 30px;
 }
 
 .signup > div {

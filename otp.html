@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otp</title>
+    <style>
+        .container_otp{
+       display: flex;
+       flex-direction: column;
+       width: 450px;
+       height: 550px;
+       margin: auto;
+       margin-top: 100px; 
+       border-radius: 45px; 
+       font-family: sans-serif;
+       background: white;
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #inside{
+            /* border: 1px solid; */
+            width: 80%;
+            margin-left: 1.2%;
+        }
+        #otp_close_btn{
+        width: 30px;
+        height: 25px;
+        border: none;
+        background: white;
+        color: grey;
+        font-size: 23px;
+        font-weight:500px;
+        margin: 40px 50px 0px 380px;
+        cursor: pointer;
+        /* border: 1px solid; */
+      }
+      #almost{
+          width: 350px;
+          height: 150px;
+          text-align: center;
+
+          margin-left: 40px;
+      }
+      #almost>p{
+          color: grey;
+      }
+      #otp_input{
+
+          display: flex;
+          width:350px;
+          height: 50px;
+          margin-left: 40px;
+      }
+      #otp_input>input{
+          width: 45px;
+          margin-right: 5px;
+          outline: none;
+          font-size: 20px;
+          text-align: center;
+      }
+      #edit_number{
+        display: flex;
+        width: 350px; 
+        justify-content: space-between;
+        margin-left: 40px;
+        color: crimson;
+        font-weight: bold;
+      }
+      #otp_continue_btn{
+        border: none;
+        background: rgb(146,37,105);
+       background: linear-gradient(175deg, rgba(146,37,105,1) 35%, rgba(201,60,88,1) 66%);
+        width: 350px;
+        margin-top: 30px;
+        margin-left: 40px;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      #otp_continue_btn:hover{
+        background: rgb(146,37,105);
+      background: linear-gradient(175deg, rgba(146,37,105,1) 24%, rgba(201,60,88,1) 99%);
+      }
+    </style>
+</head>
+<body>
+    <div class="container_otp">
+
+       <div id=inside>
+        <button id="otp_close_btn">X</button>
+
+        <div id="almost">
+            <h1>Almost There</h1>
+            <p>Please enter the 6 digit OTP that we just
+                sent on your mobile number
+            </p>
+        </div>
+ 
+        <div id="otp_input">
+            <input id="in1" type="text" maxlength="1">
+            <input id="in2" type="text" maxlength="1">
+            <input id="in3" type="text" maxlength="1">
+            <input id="in4" type="text" maxlength="1">
+            <input id="in5" type="text" maxlength="1">
+            <input id="in6" type="text" maxlength="1">
+        </div>
+         
+        <div id="edit_number">
+            <p>Edit Number</p>
+            <p>Resend OTP</p>
+        </div>
+        
+         <button id="otp_continue_btn">Continue</button>
+       </div>
+
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("#otp_continue_btn").addEventListener("click",checkOtp);
+
+  function checkOtp(){
+       var in1=document.querySelector("#in1").value;
+       var in2=document.querySelector("#in2").value;
+       var in3=document.querySelector("#in3").value;
+       var in4=document.querySelector("#in4").value;
+       var in5=document.querySelector("#in5").value;
+       var in6=document.querySelector("#in6").value;
+
+       if((in1.length==1)&&(in2.length==1)&&(in3.length==1)&&(in4.length==1)&&(in5.length==1)&&(in6.length==1)){
+           window.location.href="loginhomepage.html";
+       }
+       else{
+           alert("enter correct OTP");
+       }
+
+    }
+    document.querySelector("#otp_close_btn").addEventListener("click",function(){
+        window.location.href="homepage.html";
+    })
+</script>
