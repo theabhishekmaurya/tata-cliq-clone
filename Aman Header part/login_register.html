@@ -121,3 +121,21 @@ background: linear-gradient(175deg, rgba(146,37,105,1) 24%, rgba(201,60,88,1) 99
 </body>
 </html>
 
+<script>
+  document.querySelector("#continue_btn").addEventListener("click",checkMobileNo)
+
+  function checkMobileNo(event){
+    event.preventDefault();
+    var mobileno=document.querySelector("#mobile_number_input").value;
+    console.log(mobileno.length);
+    if(mobileno.length==10){
+      window.location.href="otp.html"
+    }
+    else{
+      alert("Please enter correct mobile number");
+    }
+  
+  }
+
+</script>
+

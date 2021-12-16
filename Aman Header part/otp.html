@@ -93,12 +93,12 @@
         </div>
  
         <div id="otp_input">
-            <input type="text" maxlength="1">
-            <input type="text" maxlength="1">
-            <input type="text" maxlength="1">
-            <input type="text" maxlength="1">
-            <input type="text" maxlength="1">
-            <input type="text" maxlength="1">
+            <input id="in1" type="text" maxlength="1">
+            <input id="in2" type="text" maxlength="1">
+            <input id="in3" type="text" maxlength="1">
+            <input id="in4" type="text" maxlength="1">
+            <input id="in5" type="text" maxlength="1">
+            <input id="in6" type="text" maxlength="1">
         </div>
          
         <div id="edit_number">
@@ -111,3 +111,24 @@
     </div>
 </body>
 </html>
+
+<script>
+    document.querySelector("#otp_continue_btn").addEventListener("click",checkOtp);
+
+  function checkOtp(){
+       var in1=document.querySelector("#in1").value;
+       var in2=document.querySelector("#in2").value;
+       var in3=document.querySelector("#in3").value;
+       var in4=document.querySelector("#in4").value;
+       var in5=document.querySelector("#in5").value;
+       var in6=document.querySelector("#in6").value;
+
+       if((in1.length==1)&&(in2.length==1)&&(in3.length==1)&&(in4.length==1)&&(in5.length==1)&&(in6.length==1)){
+           window.location.href="login_homepage.html";
+       }
+       else{
+           alert("enter correct OTP");
+       }
+
+    }
+</script>
