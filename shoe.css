@@ -76,7 +76,7 @@ body{
   line-height: 25px;
 }
 .first_row>div:nth-child(2n){
-    color: crimson;
+    color: crimson;                                  cursor
 }
 .row{
     padding-left: 10px;
@@ -139,9 +139,13 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    margin-bottom: 5px;
    color: white;
 }
+#second_btn:hover{
+    background-color: indianred;
+    
+}
 #second_btn{
     margin-left: 60px;
-    background-color: darkgoldenrod;
+    background-color: crimson;
     border: transparent;
     outline: none;
     border-radius: 20px;

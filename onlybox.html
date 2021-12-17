@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Checkout</title>
     <style>
         #con3{
             background-color: rgb(236,236,236);
@@ -194,7 +194,7 @@
         <div id="con5">
             <div class="box1">
                 <p>Bag Total</p>
-                <p>₹4499.00</p>
+                <p id="bag_total"> ₹4499.00</p>
             </div>
             <div class="box2">
                 <p>Shipping Charge</p>
@@ -202,16 +202,16 @@
             </div> 
             <div class="box3">
                 <p>Bag Subtotal</p>
-                <p>₹4499.00</p>
+                <pn id="bag_sub_total">₹4499.00</pn>
             </div>
             <div class="box4">
                 <p>Product Discounts</p>
-                <p>₹2250.00</p>
+                <p id=dis_price>₹2250.00</p>
             </div> 
-            <p class="free1">You will save ₹2250.00 on this order</p>
+            <p class="free1">You will save <b id="disc_price"></b> on this order</p>
             <div class="box5">
             <h3>Total Payable</h3>
-            <h3 class="free3"> ₹2250.00</h3>
+            <h3 id="payable"class="free3"> ₹2250.00</h3>
             </div> 
         </div>
     </div>
@@ -243,10 +243,28 @@ var Address= JSON.parse(localStorage.getItem("userdata")) || [];
     };
     Address.push(Add);
     localStorage.setItem("userdata",JSON.stringify(Address));
-   window.location.href="add.html"; 
+   window.location.href="address.html"; 
  }
+document.querySelector("#save")
 
+var data = JSON.parse(localStorage.getItem("cart_history"))
+// console.log(data);
+var bag_total = 0;
+var discount = 0;
+data.map(function (elem) {
+    bag_total += Number(elem.oldPrice);
+    discount+=Number(elem.oldPrice)-Number(elem.Newprice)
 
+})
+var payable = bag_total - discount
+// console.log(payable);
+// console.log(discount);
+// console.log(bag_total);
+document.querySelector("#bag_total").textContent = "₹" + bag_total+".00";
+document.querySelector("#bag_sub_total").textContent = "₹" + bag_total+".00";
+document.querySelector("#dis_price").textContent = "-₹" + discount+".00";
+document.querySelector("#disc_price").textContent = "₹" + discount+".00";
+document.querySelector("#payable").textContent = "₹" + payable+".00";
 
 
 </script>

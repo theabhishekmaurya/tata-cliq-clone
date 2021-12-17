@@ -45,3 +45,6 @@ document.querySelector("#bag_sub_total").textContent = "₹" + bag_total+".00";
 document.querySelector("#dis_price").textContent = "-₹" + discount+".00";
 document.querySelector("#payable").textContent = "₹" + payable+".00";
 
+
+var add = JSON.parse(localStorage.getItem("userdata"));
+document.querySelector("#homeAdd").textContent=add[0].address;

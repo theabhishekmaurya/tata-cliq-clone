@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Checkout</title>
     <style>
         #con8 {
             background-color: rgb(236, 236, 236);
@@ -191,6 +191,10 @@ border: 1px solid red;
             font-family: sans-serif;
             margin-top: 20px;
         }
+        #addAddress:hover{
+            cursor: pointer;
+            color: rgb(163, 34, 34);
+        }
     </style>
 </head>
 
@@ -207,17 +211,17 @@ border: 1px solid red;
                         <h4>Confirm adress</h4>
                     </div>
 
-                    <p class="newadd">Add new adress</>
+                    <p id="addAddress" class="newadd">Add new adress</>
 
                 </div>
                 <div style="display: flex;">
                     <div style="display: flex;">
                         <div id="pinkcircle"></div>
                         <div class="homeadd">
-                            <h5>Home</h5>
-                            <p><span>HNO5100VillBommena</span>Telangana <span>505306
+                            <h5 >Home</h5>
+                            <p><span id="hno">HNO5100VillBommena</span> <span id="state">Telangana</span><span id="pin">505306</span>
                                     <br>
-                                </span>ph.9100373829<span></span></p>
+                                <span id="phno">ph.9100373829</span></p>
                         </div>
 
                     </div>
@@ -230,7 +234,7 @@ border: 1px solid red;
             <div id="con10">
                 <div class="box13">
                     <p>Bag Total</p>
-                    <p>₹1985.00</p>
+                    <p id="bag_total">₹1985.00</p>
                 </div>
                 <div class="box23">
                     <p>Shipping Charge</p>
@@ -238,20 +242,20 @@ border: 1px solid red;
                 </div>
                 <div class="box33">
                     <p>Bag Subtotal</p>
-                    <p>₹1985.00</p>
+                    <p id="bag_sub_total">₹1985.00</p>
                 </div>
                 <div class="box43">
                     <p>Product Discounts</p>
-                    <p>-₹1036.00</p>
+                    <p id="dis_price">-₹1036.00</p>
 
                 </div>
                 <div style="color:seagreen ;">
-                    <p>You will save <span>₹1036.00</span> on this order</p>
+                    <p>You will save <span id="disc_price">₹1036.00</span> on this order</p>
                 </div>
                 <hr>
                 <div class="box5">
-                    <h2 style="color: darkslategray;">Total Payable</h2>
-                    <p style="color: black;font-size: 20px;">₹949.00</p>
+                    <h2  style="color: darkslategray;">Total Payable</h2>
+                    <p id="payable"style="color: black;font-size: 20px;">₹949.00</p>
                 </div>
             </div>
 
@@ -281,4 +285,39 @@ border: 1px solid red;
         document.querySelector("#pinkcircle").style.color = "2px solid rgb(255, 23, 68)"
     }
     console.log(JSON.parse(localStorage.getItem("userdata")));
+    document.querySelector("#sav").addEventListener("click",function(){
+        window.location.href="payment.html"
+    })
+    document.querySelector("#addAddress").addEventListener("click",function(){
+        window.location.href="onlybox.html"
+    })
+    var add = JSON.parse(localStorage.getItem("userdata"));
+    document.querySelector("#hno").textContent=add[0].address
+    document.querySelector("#pin").textContent=add[0].pincode
+    document.querySelector("#phno").textContent=add[0].mobile
+    document.querySelector("#state").textContent=add[0].state
+
+
+var data = JSON.parse(localStorage.getItem("cart_history"))
+// console.log(data);
+var bag_total = 0;
+var discount = 0;
+data.map(function (elem) {
+    bag_total += Number(elem.oldPrice);
+    discount+=Number(elem.oldPrice)-Number(elem.Newprice)
+
+})
+var payable = bag_total - discount
+// console.log(payable);
+// console.log(discount);
+// console.log(bag_total);
+document.querySelector("#bag_total").textContent = "₹" + bag_total+".00";
+document.querySelector("#bag_sub_total").textContent = "₹" + bag_total+".00";
+document.querySelector("#dis_price").textContent = "-₹" + discount+".00";
+document.querySelector("#payable").textContent = "₹" + payable+".00";
+document.querySelector("#disc_price").textContent = "₹" + discount+".00";
+
+
+    
+
 </script>

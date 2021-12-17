@@ -65,3 +65,7 @@ document.querySelector(".discountprice").textContent=discprice
 document.querySelector(".totalprice2").textContent=oldprice
 document.querySelector(".discountprice2").textContent=discprice
 document.querySelector("#amount").textContent=oldprice-discprice;
+
+document.querySelector("#checkOut").addEventListener("click",function(){
+    window.location.href="onlybox.html"
+})
