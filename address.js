@@ -1,0 +1,1 @@
+document.querySelector("#pinkcircle").addEventListener("click",change())
