@@ -43,5 +43,5 @@ document.querySelector("#loginbtn").addEventListener("click",function(){
     window.location.href="login_register.html"
 })
 document.querySelector("#casual").addEventListener("click",function(){
-    window.location.href="casual_shoe.html"
+    window.location.href="login_register.html"
 })

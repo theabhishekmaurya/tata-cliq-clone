@@ -223,6 +223,10 @@ width: 20px;
 margin-right: 10px;
 margin-left: 10px;
 }
+#casual:hover{
+  color: red;
+  cursor: pointer;
+}
 #main {
     margin: 0vh;
     border:none;
