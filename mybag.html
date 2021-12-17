@@ -10,12 +10,31 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="mybag.css" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="othernav.css">
 
     <style src="mybag.css">
       
     </style>
   </head>
   <body>
+    <div id="othernav">
+      <div>
+        <div>
+          <img src="tatacliq icon.png" />
+        </div>
+        <div>
+          <div >
+            <div id="my_account">
+              <i class="fas fa-2x fa-user-circle"></i> &nbsp;&nbsp;&nbsp;<i
+                class="fas fa-angle-down"
+                id="account_angle_down"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
     <div id="container">
       <div id="topbar">
         <div id="bagtext">My Bag</div>
@@ -37,21 +56,21 @@
         </div>
         <div id="maincontent">
           <div id="itemdiv">
-            <div id="itemcontainer">
+            <div id="itemcontainer" style="position: absolute; display: none;">
               <div id="item">
                 <div>
-                  <img
+                  <img class="prodimg"
                     src="https://img.tatacliq.com/images/i7/437Wx649H/MP000000009116653_437Wx649H_202103191503531.jpeg"
                     ;
                   />
                 </div>
                 <div>
                   <div id="itemdetails">
-                    <p style="margin-bottom: 0%">
+                    <p style="margin-bottom: 0%" id="prodname">
                       Alberto Torresi Men's Black Casual Loafers
                     </p>
                     <div class="flex" style="font-weight: normal">
-                      <p style="margin-top: 5.1%">₹23&nbsp&nbsp&nbsp&nbsp</p>
+                      <p id="prodnewprice"style="margin-top: 5.1%">₹23</p><span>&nbsp&nbsp&nbsp&nbsp</span>
                       <p><strike style="font-size: 18px">₹50</strike></p>
                     </div>
 
@@ -66,8 +85,8 @@
                       ><br /><br />
                       <div class="flex">
                         <div style="margin-right: 30%">
-                          <label>Color:</label>
-                          <span id="itemcolor">Black</span>
+                          <label>Product:</label>
+                          <span id="prodcat">Black</span>
                         </div>
                         <div>
                           <label>Size:</label>
@@ -85,153 +104,7 @@
                         <p style="margin-left: 2px; margin-right: 25px">
                           Save to wishlist
                         </p>
-                        <p>Remove</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="truckicon" class="flex">
-                    <img class="truckimage" src="delivery.png" />
-                    <span style="margin-left: 5%; margin-top: 15px" class="flex"
-                      >Delivery by</span
-                    >
-                    <p
-                      class="flex"
-                      style="font-weight: normal; margin-left: 2%"
-                    >
-                      21st dec
-                    </p>
-                    <p>&nbsp&nbsp|</p>
-                    <p
-                      style="color: green; font-weight: normal; margin-left: 2%"
-                    >
-                      <b>FREE</b>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="itemcontainer">
-              <div id="item">
-                <div>
-                  <img
-                    src="https://img.tatacliq.com/images/i7/437Wx649H/MP000000009116653_437Wx649H_202103191503531.jpeg"
-                    ;
-                  />
-                </div>
-                <div>
-                  <div id="itemdetails">
-                    <p style="margin-bottom: 0%">
-                      Alberto Torresi Men's Black Casual Loafers
-                    </p>
-                    <div class="flex" style="font-weight: normal">
-                      <p style="margin-top: 5.1%">₹23&nbsp&nbsp&nbsp&nbsp</p>
-                      <p><strike style="font-size: 18px">₹50</strike></p>
-                    </div>
-
-                    <div>
-                      <label for="">Quantity:&nbsp</label>
-                      <select style="border: none; background: transparent">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option></select
-                      ><br /><br />
-                      <div class="flex">
-                        <div style="margin-right: 30%">
-                          <label>Color:</label>
-                          <span id="itemcolor">Black</span>
-                        </div>
-                        <div>
-                          <label>Size:</label>
-                          <span id="itemcolor">UK/IND-8</span>
-                        </div>
-                      </div>
-                      <br />
-                      <hr style="border: 0.1px solid rgb(233, 233, 233)" />
-                      <div class="flex" style="font-weight: normal">
-                        <i
-                          style="margin-top: 12px; color: gray"
-                          class="material-icons"
-                          >bookmark_border</i
-                        >
-                        <p style="margin-left: 2px; margin-right: 25px">
-                          Save to wishlist
-                        </p>
-                        <p>Remove</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="truckicon" class="flex">
-                    <img class="truckimage" src="delivery.png" />
-                    <span style="margin-left: 5%; margin-top: 15px" class="flex"
-                      >Delivery by</span
-                    >
-                    <p
-                      class="flex"
-                      style="font-weight: normal; margin-left: 2%"
-                    >
-                      21st dec
-                    </p>
-                    <p>&nbsp&nbsp|</p>
-                    <p
-                      style="color: green; font-weight: normal; margin-left: 2%"
-                    >
-                      <b>FREE</b>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="itemcontainer">
-              <div id="item">
-                <div>
-                  <img
-                    src="https://img.tatacliq.com/images/i7/437Wx649H/MP000000009116653_437Wx649H_202103191503531.jpeg"
-                    ;
-                  />
-                </div>
-                <div>
-                  <div id="itemdetails">
-                    <p style="margin-bottom: 0%">
-                      Alberto Torresi Men's Black Casual Loafers
-                    </p>
-                    <div class="flex" style="font-weight: normal">
-                      <p style="margin-top: 5.1%">₹23&nbsp&nbsp&nbsp&nbsp</p>
-                      <p><strike style="font-size: 18px">₹50</strike></p>
-                    </div>
-
-                    <div>
-                      <label for="">Quantity:&nbsp</label>
-                      <select style="border: none; background: transparent">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option></select
-                      ><br /><br />
-                      <div class="flex">
-                        <div style="margin-right: 30%">
-                          <label>Color:</label>
-                          <span id="itemcolor">Black</span>
-                        </div>
-                        <div>
-                          <label>Size:</label>
-                          <span id="itemcolor">UK/IND-8</span>
-                        </div>
-                      </div>
-                      <br />
-                      <hr style="border: 0.1px solid rgb(233, 233, 233)" />
-                      <div class="flex" style="font-weight: normal">
-                        <i
-                          style="margin-top: 12px; color: gray"
-                          class="material-icons"
-                          >bookmark_border</i
-                        >
-                        <p style="margin-left: 2px; margin-right: 25px">
-                          Save to wishlist
-                        </p>
-                        <p>Remove</p>
+                        <p id="remove">Remove</p>
                       </div>
                     </div>
                   </div>
@@ -294,7 +167,7 @@
                   </div>
                   <div>
                     <p>Bag Subtotal</p>
-                    <p>₹<span class="totalprice">7794</span></p>
+                    <p>₹<span class="totalprice2">7794</span></p>
                   </div>
                   <div>
                     <p>Product Discount(s)</p>
@@ -302,7 +175,7 @@
                   </div>
                   <div>
                     <p style="color: green; font-size: 14px">
-                      You will save ₹<b class="discountprice "style="font-weight: 500">4576</b> on this
+                      You will save ₹<b class="discountprice2 "style="font-weight: 500">4576</b> on this
                       order
                     </p>
                   </div>
@@ -321,7 +194,7 @@
               <div id="checkoutbox">
                 <div>
                   <h3>Total</h3>
-                  <p>₹<span>1128</span></p>
+                  <p>₹<span id="amount">1128</span></p>
                 </div>
                 <div>
                   <button>Checkout</button>
@@ -337,8 +210,83 @@
       </div>
       
     </div>
+    <!-- <div style="display: none;">
+      <div id="itemcontainer">
+        <div id="item">
+          <div>
+            <img class="prodimg"
+              src="https://img.tatacliq.com/images/i7/437Wx649H/MP000000009116653_437Wx649H_202103191503531.jpeg"
+              ;
+            />
+          </div>
+          <div>
+            <div id="itemdetails">
+              <p style="margin-bottom: 0%">
+                Alberto Torresi Men's Black Casual Loafers
+              </p>
+              <div class="flex" style="font-weight: normal">
+                <p style="margin-top: 5.1%">₹23&nbsp&nbsp&nbsp&nbsp</p>
+                <p><strike style="font-size: 18px">₹50</strike></p>
+              </div>
+
+              <div>
+                <label for="">Quantity:&nbsp</label>
+                <select style="border: none; background: transparent">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option></select
+                ><br /><br />
+                <div class="flex">
+                  <div style="margin-right: 30%">
+                    <label>Color:</label>
+                    <span id="itemcolor">Black</span>
+                  </div>
+                  <div>
+                    <label>Size:</label>
+                    <span id="itemcolor">UK/IND-8</span>
+                  </div>
+                </div>
+                <br />
+                <hr style="border: 0.1px solid rgb(233, 233, 233)" />
+                <div class="flex" style="font-weight: normal">
+                  <i
+                    style="margin-top: 12px; color: gray"
+                    class="material-icons"
+                    >bookmark_border</i
+                  >
+                  <p style="margin-left: 2px; margin-right: 25px">
+                    Save to wishlist
+                  </p>
+                  <p>Remove</p>
+                </div>
+              </div>
+            </div>
+            <div id="truckicon" class="flex">
+              <img class="truckimage" src="delivery.png" />
+              <span style="margin-left: 5%; margin-top: 15px" class="flex"
+                >Delivery by</span
+              >
+              <p
+                class="flex"
+                style="font-weight: normal; margin-left: 2%"
+              >
+                21st dec
+              </p>
+              <p>&nbsp&nbsp|</p>
+              <p
+                style="color: green; font-weight: normal; margin-left: 2%"
+              >
+                <b>FREE</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
   </body>
 </html>
 <script src="mybag.js">
-
+ 
 </script>

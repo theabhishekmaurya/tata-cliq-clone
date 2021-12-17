@@ -42,3 +42,6 @@ document.querySelector(".signup").addEventListener("mouseout", function(){
 document.querySelector("#my_account").addEventListener("click",function(){
     window.location.href="myaccount.html"
 })
+document.querySelector("#casual").addEventListener("click",function(){
+    window.location.href="casual_shoe.html"
+})

@@ -94,7 +94,10 @@
 .fa-shopping-bag {
   font-size: 20px;
 }
-
+#casual:hover{
+  cursor: pointer;
+  color: black;
+}
 #brand,
 #category {
   /* border: 1px solid black; */

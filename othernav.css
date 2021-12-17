@@ -1,0 +1,35 @@
+#othernav {
+    border: 1px solid black;
+    height: 70px;
+    background-color: #212121;
+  }
+  .fa-angle-down {
+font-size: 20px;
+/* border: 1px solid; */
+height: 30px;
+margin-top: 18px;
+color: white;
+}
+  #othernav> div {
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  #my_account{
+      margin-top: 20%;
+  }
+  #my_account:hover{
+      cursor: pointer;
+  }
+  #othernav > div > div {
+    height: 100%;
+  }
+  #othernav> div > div > img {
+    height: 90%;
+  }
+  .fa-user-circle{
+      color: white;
+  }
