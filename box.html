@@ -5,102 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    
         
-        #con8{
-            background-color: rgb(236,236,236);
-           padding: 30px;
-           font-family:sans-serif;
-           height: auto;
-           width: 100%;
-           display: flex;
-           
-        }
-        #con9{
-            border-radius: 7px;
-            width:60%;
-            height: 290px;
-            padding: 0px 10px ;
-            background-color: white;
-            margin-top: 100px;
-            box-shadow: rgba(100, 100, 111,0.2)0px 7px 29px 0px;
-         margin-left: 70px;
-         
-        }
-        #con10{
-            height: 310px;
-            width: 25%;
-            box-shadow: rgba(100, 100, 111,0.2)0px 7px 29px 0px;
-            margin-left: 30px;
-            background-color: white;
-            padding: 15px;
-            margin-top: 100px;
-            margin-left: 20px;
-           
-        }
-        .addadress>b{
-            border:2px solid black;
-            border-radius: 50%;
-            padding:5px 5px;
-        }
-        #topiv{
-            display: flex;
-            justify-content: space-between;
-        }
-        .newadd{
-            color: pink;
-        }
-        .checBox{
-            border-radius: 50%;
-            width:50px;
-            cursor: pointer;
-        }
-        #sav{
-            background-color: rgb(255,23,68);
-            color: white;
-            width:180px;
-            height:40px;
-            border-radius: 20px;
-            cursor: pointer ;
-            border: 0;
-            margin:30px
-        }
-        #lasDiv{
-            display: flex;
-            justify-content: space-between;
-        
-            margin-top: 50px;
-        }
-        .box13{
-            display: flex;
-            justify-content: space-between;
-            line-height: 10px;
-            
-        }
-        .box23{
-            display: flex;
-            justify-content: space-between;
-            line-height: 10px;
-            
-        }
-        .box33{
-            display: flex;
-            justify-content: space-between;
-            line-height: 10px;
-        }
-        .box43{
-            display: flex;
-            justify-content: space-between;
-            line-height: 10px;
-            
-        }
-        .box5{
-            display: flex;
-            justify-content: space-between;
-        
-            margin-top: 20px;
-        }
-    </style>
+      
 </head>
 <body>
     
@@ -150,5 +57,33 @@
 </body>
 </html>
 <script>
-    console.log(JSON.parse(localStorage.getItem("userdata")));
+    
+    document.querySelector("#form1").addEventListener("submit",addAddress)
+var Address= JSON.parse(localStorage.getItem("userdata")) || [];
+ function addAddress(event){
+
+    event.preventDefault();
+
+    var pincode  = document.querySelector("#pin").value;
+    var firstname = document.querySelector("#firstName").value;
+    var lastname = document.querySelector("#lastName").value;
+    var citi  = document.querySelector("#city").value;
+    var address= document.querySelector("#Address").value;
+    var state= document.querySelector("#state").value;
+    var mobile= document.querySelector("#mobNo").value;
+
+    var Add={
+        pincode: pincode,
+        firstname: firstname,
+        lastname: lastname,
+        citi: citi,
+        address: address,
+        state:state,
+        mobile:mobile,
+    };
+    Address.push(Add);
+    localStorage.setItem("userdata",JSON.stringify(Address));
+   window.location.href="add.html"; 
+ }
+ 
 </script>
