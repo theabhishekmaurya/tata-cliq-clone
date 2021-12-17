@@ -56,7 +56,8 @@
         }
         #Address{
             width:340px;
-            height:60px
+            height:60px;
+            margin-bottom: 0px;
             
         }
         #state+div{
@@ -133,6 +134,10 @@
             display: flex;
             justify-content: space-between;
         }
+        #width1{
+            display: flex;
+            
+        }
     </style>
 </head>
 <body>
@@ -153,11 +158,13 @@
                    <input id="lastName"  type ="text"  placeholder="Last Name*"/>
                    <input class="width" id="city" type="text" placeholder="City/distict*"/>
                    <input id="Address"  type="text"  placeholder="Address*"/>
-                    
-                   <input class="width" id="state"  type="text"  placeholder="State"/>
                    <div id="width1">
-                   <p>Character Limit : 120</p>
-                    <p>Special characters allowed are - # & ( ) ' ' . , \ / + _</p>
+                   <input class="width" id="state"  type="text"  placeholder="State"/>
+                       <p style="padding-left: 20px;margin-top: 0px;font-size: 14px;color: grey;">
+                        <span>Character Limit : 120</span><br>
+                        <span>Special characters allowed are - # & ( ) ' ' . , \ / + _</span>
+                       </p>
+                  
                     </div>
             
                    <select >
@@ -211,22 +218,33 @@
 </body>
 </html>
 <script>
-document.querySelector("#form1").addEventListener("submit",addAddress())
-
+ document.querySelector("#form1").addEventListener("submit",addAddress)
+var Address= JSON.parse(localStorage.getItem("userdata")) || [];
  function addAddress(event){
-event.preventDefault();
+
+    event.preventDefault();
 
     var pincode  = document.querySelector("#pin").value;
     var firstname = document.querySelector("#firstName").value;
     var lastname = document.querySelector("#lastName").value;
     var citi  = document.querySelector("#city").value;
-    var address=document.querySelector("#Address").value;
-    var state=document.querySelector("#state").value;
+    var address= document.querySelector("#Address").value;
+    var state= document.querySelector("#state").value;
+    var mobile= document.querySelector("#mobNo").value;
 
-    console.log(pincode,firstname,lastname,citi,address,state)
+    var Add={
+        pincode: pincode,
+        firstname: firstname,
+        lastname: lastname,
+        citi: citi,
+        address: address,
+        state:state,
+        mobile:mobile,
+    };
+    Address.push(Add);
+    localStorage.setItem("userdata",JSON.stringify(Address));
+   window.location.href="add.html"; 
  }
-
-
 
 
 
