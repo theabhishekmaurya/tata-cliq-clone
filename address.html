@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #con8{
+            background-color: rgb(236,236,236);
+           padding: 30px;
+           font-family:sans-serif;
+           height: auto;
+           width: 100%;
+           display: flex;
+           
+        }
+        #con9{
+            border-radius: 7px;
+            width:60%;
+            height: 290px;
+            padding: 0px 10px ;
+            background-color: white;
+            margin-top: 100px;
+            box-shadow: rgba(100, 100, 111,0.2)0px 7px 29px 0px;
+         margin-left: 70px;
+         
+        }
+        #con10{
+            height: 310px;
+            width: 30%;
+            box-shadow: rgba(100, 100, 111,0.2)0px 7px 29px 0px;
+            margin-left: 30px;
+            background-color: white;
+            padding: 15px;
+            margin-top: 100px;
+            margin-left: 20px;
+           
+        }
+        .addadress>b{
+            border:2px solid black;
+            border-radius: 50%;
+            padding:5px 5px;
+        }
+        #topiv{
+            display: flex;
+            justify-content: space-between;
+        }
+        .newadd{
+            color: pink;
+        }
+        .checBox{
+            border-radius: 50%;
+            width:50px;
+            cursor: pointer;
+        }
+        #sav{
+            background-color: rgb(255,23,68);
+            color: white;
+            width:180px;
+            height:40px;
+            border-radius: 20px;
+            cursor: pointer ;
+            border: 0;
+            margin:30px
+        }
+        #lasDiv{
+            display: flex;
+            justify-content: space-between;
+        
+            margin-top: 50px;
+        }
+        .box13{
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+            
+        }
+        .box23{
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+            
+        }
+        .box33{
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+        }
+        .box43{
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+            
+        }
+        .box5{
+            display: flex;
+            justify-content: space-between;
+        
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="con8">
+        
+        <div id="con9">
+            
+            <div id="topiv">
+                 
+                <h3 class="addaddress"><b>1</b> Add Address</h3>
+               
+               <h5 class="newadd">Confirm Address</h5>
+               </div>
+               <div>
+                <input class="checBox"  id="Home" type="checkbox" >
+                <label> <b>Home</b></label>
+               </div>
+               <div id="lasDiv">
+                   <h1></h1>
+                <button id="sav"><b>Continue</b></button>
+                
+               
+            </div>
+        </div>
+        <div id="con10">
+            <div class="box13">
+                <p>Bag Total</p>
+                
+            </div>
+            <div class="box23">
+                <p>Shipping Charge</p>
+                
+            </div> 
+            <div class="box33">
+                <p>Bag Subtotal</p>
+                
+        </div>
+        <div class="box43">
+            <p>Product Discounts</p>
+            
+        </div> 
+        <div class="box5">
+            <h3>Total Payable</h3>
+            
+            </div> 
+    </div>
+</body>
+</html>
+<script>
+    console.log(JSON.parse(localStorage.getItem("userdata")));
+</script>
