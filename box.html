@@ -18,7 +18,7 @@
         }
         #con4{
             border-radius: 7px;
-            width:770px;
+            width:65%;
             padding: 0px 10px ;
             background-color: white;
             margin-top: 100px;
@@ -26,8 +26,8 @@
          margin-left: 100px;
         }
         #con5{
-            height: 280px;
-            width: 280px;
+            height: 20%;
+            width: 20%;
             box-shadow: rgba(100, 100, 111,0.2)0px 7px 29px 0px;
             margin-left: 25px;
             background-color: white;
@@ -51,9 +51,18 @@
         }
         .width{
             width:310px;
-        
-
-        }
+         }
+         #width1{
+             margin-top: 0%;
+             padding-top: 0%;
+             display: flex;
+         }
+         #width1>p{
+             padding-left: 20px;
+             margin-top: 0%;
+             font-size: 14px;
+             color: grey;
+         }
         #Address{
             width:340px;
             height:60px
@@ -138,8 +147,9 @@
 <body>
     <div id="con3">
         <div id="con4">
+            <h1>CheckOut</h1>
             <form id="form1">
-                <h1>CheckOut</h1>
+                
                 <div id="topDiv">
                  
                  <h3 class="addaddress"><b>1</b> Add Address</h3>
@@ -153,12 +163,13 @@
                    <input id="lastName"  type ="text"  placeholder="Last Name*"/>
                    <input class="width" id="city" type="text" placeholder="City/distict*"/>
                    <input id="Address"  type="text"  placeholder="Address*"/>
-                    
-                   <input class="width" id="state"  type="text"  placeholder="State"/>
                    <div id="width1">
-                   <p>Character Limit : 120</p>
-                    <p>Special characters allowed are - # & ( ) ' ' . , \ / + _</p>
-                    </div>
+                   <input class="width" id="state"  type="text"  placeholder="State"/>
+                   <p>
+                   <span>Character Limit : 120</span>
+                   <br> <span>Special characters allowed are - # & ( ) ' ' . , \ / + _</span>
+                </p>
+            </div>
             
                    <select >
                        <option>Landmark</option>
@@ -221,9 +232,9 @@ var Address= JSON.parse(localStorage.getItem("userdata")) || [];
     var firstname = document.querySelector("#firstName").value;
     var lastname = document.querySelector("#lastName").value;
     var citi  = document.querySelector("#city").value;
-    var address=document.querySelector("#Address").value;
-    var state=document.querySelector("#state").value;
-    var mobile=document.querySelector("#mobNo").value;
+    var address= document.querySelector("#Address").value;
+    var state= document.querySelector("#state").value;
+    var mobile= document.querySelector("#mobNo").value;
 
     var Add={
         pincode: pincode,
@@ -232,16 +243,13 @@ var Address= JSON.parse(localStorage.getItem("userdata")) || [];
         citi: citi,
         address: address,
         state:state,
-        mobile:mobile
+        mobile:mobile,
     };
     Address.push(Add);
     localStorage.setItem("userdata",JSON.stringify(Address));
+   window.location.href="address.html"; 
  }
- document.querySelector("#save").addEventListener("submit",function(){
-     windows.location.href="admin.html"
-
- });
-
+ 
 
 
 </script>
