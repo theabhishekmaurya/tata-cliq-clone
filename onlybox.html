@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #con3{
+            background-color: rgb(236,236,236);
+           padding:30px;
+           font-family:sans-serif;
+           height: auto;
+           width: 100%;
+           display: flex;
+           
+           
+        }
+        #con4{
+            border-radius: 7px;
+            width:60%;
+            padding: 0px 10px ;
+            background-color: white;
+            margin-top: 100px;
+            box-shadow: rgba(100, 100, 111,0.2)0px 7px 29px 0px;
+         margin-left: 100px;
+        }
+        #con5{
+            height: 280px;
+            width: 280px;
+            box-shadow: rgba(100, 100, 111,0.2)0px 7px 29px 0px;
+            margin-left: 25px;
+            background-color: white;
+            padding: 15px;
+            margin-top: 100px;
+        }
+        #topDiv{
+            display: flex;
+            justify-content: space-between;
+        }
+        #clear{
+            border:0;
+            text-decoration: underline;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        input{
+            width:140px;
+            margin:15px;
+            padding:8px
+        }
+        .width{
+            width:310px;
+        
+
+        }
+        #Address{
+            width:340px;
+            height:60px;
+            margin-bottom: 0px;
+            
+        }
+        #state+div{
+            margin-left:380px;
+            line-height: 10px;
+            margin-top:0;
+        }
+
+        select{
+            width:340px;
+            padding:10px;
+            margin: 15px;
+        }
+        #lastDiv{
+            margin: 0px 30px 20px 430px  
+        }
+        #save{
+            background-color: rgb(255,23,68);
+            color: white;
+            width:180px;
+            height:40px;
+            border-radius: 20px;
+            cursor: pointer ;
+            border: 0;
+            margin:30px
+        }
+        #Cancel{
+            color: rgb(255,23,68) ;
+            border:0;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        .checkBox{
+            border-radius: 50%;
+            width:50px;
+            cursor: pointer;
+        }
+        .addaddress>b{
+            border:2px solid black;
+            border-radius: 50%;
+            padding:1px 5px
+        }
+        .box1{
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+        }
+        .box2{
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+        }
+        .free{
+            color: green;
+            font-weight: bold;
+        }
+        .box3{
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+        }
+        .box4{
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+        }
+        .free1{
+            color: green;
+        }
+        .free3{
+            font-weight: lighter;
+        }
+        .box5{
+            display: flex;
+            justify-content: space-between;
+        }
+        #width1{
+            display: flex;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="con3">
+        <div id="con4">
+            <form id="form1">
+                <h1>CheckOut</h1>
+                <div id="topDiv">
+                 
+                 <h3 class="addaddress"><b>1</b> Add Address</h3>
+                
+                <button id="clear">Clear all</button>
+                </div>
+                
+                    
+                   <input class="width" id="pin" type="number" placeholder="Enter your PIN code*"/>
+                   <input  id="firstName" type="text"  placeholder="First Name*"/>
+                   <input id="lastName"  type ="text"  placeholder="Last Name*"/>
+                   <input class="width" id="city" type="text" placeholder="City/distict*"/>
+                   <input id="Address"  type="text"  placeholder="Address*"/>
+                   <div id="width1">
+                   <input class="width" id="state"  type="text"  placeholder="State"/>
+                       <p style="padding-left: 20px;margin-top: 0px;font-size: 14px;color: grey;">
+                        <span>Character Limit : 120</span><br>
+                        <span>Special characters allowed are - # & ( ) ' ' . , \ / + _</span>
+                       </p>
+                  
+                    </div>
+            
+                   <select >
+                       <option>Landmark</option>
+                   </select>
+                  
+                   <input class="width" id="mobNo" type="number"  placeholder="Phone number*"/>
+            
+            
+                   <div>
+                    <input class="checkBox"  id="Home" type="checkbox" >
+                    <label > Home</label>
+                    <input class="checkBox" id= "office" type="checkbox" >
+                    <label for="office"> Office</label>
+                 </div>
+                 <hr>
+                 <input class="checkBox" id="defaulAdd" type="checkbox" >
+                 <label for="defaultAdd"> I have a bike</label>
+            
+              <div id="lastDiv">
+                  <button id="Cancel"><b>Cancel</b></button>
+                  <input id="save"  type="submit"></input>
+                 
+              </div>
+                </form>
+        </div>
+        <div id="con5">
+            <div class="box1">
+                <p>Bag Total</p>
+                <p>₹4499.00</p>
+            </div>
+            <div class="box2">
+                <p>Shipping Charge</p>
+                <p class="free">FREE</p>
+            </div> 
+            <div class="box3">
+                <p>Bag Subtotal</p>
+                <p>₹4499.00</p>
+            </div>
+            <div class="box4">
+                <p>Product Discounts</p>
+                <p>₹2250.00</p>
+            </div> 
+            <p class="free1">You will save ₹2250.00 on this order</p>
+            <div class="box5">
+            <h3>Total Payable</h3>
+            <h3 class="free3"> ₹2250.00</h3>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
+<script>
+ document.querySelector("#form1").addEventListener("submit",addAddress)
+var Address= JSON.parse(localStorage.getItem("userdata")) || [];
+ function addAddress(event){
+
+    event.preventDefault();
+
+    var pincode  = document.querySelector("#pin").value;
+    var firstname = document.querySelector("#firstName").value;
+    var lastname = document.querySelector("#lastName").value;
+    var citi  = document.querySelector("#city").value;
+    var address= document.querySelector("#Address").value;
+    var state= document.querySelector("#state").value;
+    var mobile= document.querySelector("#mobNo").value;
+
+    var Add={
+        pincode: pincode,
+        firstname: firstname,
+        lastname: lastname,
+        citi: citi,
+        address: address,
+        state:state,
+        mobile:mobile,
+    };
+    Address.push(Add);
+    localStorage.setItem("userdata",JSON.stringify(Address));
+   window.location.href="add.html"; 
+ }
+
+
+
+
+</script>
+
