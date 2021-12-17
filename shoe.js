@@ -195,7 +195,8 @@ function display(){
         var btn2=document.createElement("button");
         btn2.textContent="Add to Cart";
         btn2.setAttribute("id","second_btn");
-        btn2.addEventListener("click",function(){
+        btn2.addEventListener("click", function () {
+            document.querySelector(".right_box").textContent="";
             cart.push(elem);
             localStorage.setItem("cart_history",JSON.stringify(cart));
         })

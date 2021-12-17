@@ -31,9 +31,12 @@
                         <div id="pinkcircle"></div>
                         <div class="homeadd">
                             <h5>Home</h5>
-                            <p><span>HNO5100VillBommena</span>Telangana <span>505306
+                            <p>
+                                <span id="h_no">HNO5100VillBommena</span>
+                               <span id="state">Telangana </span> 
+                                <span id="pin">505306</span>
                                     <br>
-                                </span>ph.9100373829<span></span></p>
+                                </span id="mbl_no">ph.9100373829<span></span></p>
                         </div>
 
                     </div>
@@ -115,4 +118,13 @@ document.querySelector("#bag_total").textContent = "₹" + bag_total+".00";
 document.querySelector("#bag_sub_total").textContent = "₹" + bag_total+".00";
 document.querySelector("#dis_price").textContent = "-₹" + discount+".00";
 document.querySelector("#payable").textContent = "₹" + payable+".00";
+var address=JSON.parse(localStorage.getItem("userdata"))
+// console.log(address);
+address.map(function(elem){
+    document.querySelector("#h_no").textContent=elem.address
+    document.querySelector("#state").textContent=" "+lem.state
+    document.querySelector("#pin").textContent=" "+elem.pincode
+    document.querySelector("#mbl_no").textContent="ph."+elem.mobile
+})
+
 </script>
