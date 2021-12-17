@@ -6,83 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #con3{
+        
+        #con8{
             background-color: rgb(236,236,236);
-           padding:30px;
+           padding: 30px;
            font-family:sans-serif;
            height: auto;
            width: 100%;
            display: flex;
            
-           
         }
-        #con4{
+        #con9{
             border-radius: 7px;
-            width:65%;
+            width:60%;
+            height: 290px;
             padding: 0px 10px ;
             background-color: white;
             margin-top: 100px;
             box-shadow: rgba(100, 100, 111,0.2)0px 7px 29px 0px;
-         margin-left: 100px;
+         margin-left: 70px;
+         
         }
-        #con5{
-            height: 20%;
-            width: 20%;
+        #con10{
+            height: 310px;
+            width: 25%;
             box-shadow: rgba(100, 100, 111,0.2)0px 7px 29px 0px;
-            margin-left: 25px;
+            margin-left: 30px;
             background-color: white;
             padding: 15px;
             margin-top: 100px;
+            margin-left: 20px;
+           
         }
-        #topDiv{
+        .addadress>b{
+            border:2px solid black;
+            border-radius: 50%;
+            padding:5px 5px;
+        }
+        #topiv{
             display: flex;
             justify-content: space-between;
         }
-        #clear{
-            border:0;
-            text-decoration: underline;
-            background-color: transparent;
+        .newadd{
+            color: pink;
+        }
+        .checBox{
+            border-radius: 50%;
+            width:50px;
             cursor: pointer;
         }
-        input{
-            width:140px;
-            margin:15px;
-            padding:8px
-        }
-        .width{
-            width:310px;
-         }
-         #width1{
-             margin-top: 0%;
-             padding-top: 0%;
-             display: flex;
-         }
-         #width1>p{
-             padding-left: 20px;
-             margin-top: 0%;
-             font-size: 14px;
-             color: grey;
-         }
-        #Address{
-            width:340px;
-            height:60px
-            
-        }
-        #state+div{
-            margin-left:380px;
-            line-height: 10px;
-            margin-top:0;
-        }
-
-        select{
-            width:340px;
-            padding:10px;
-            margin: 15px;
-        }
-        #lastDiv{
-            margin: 0px 30px 20px 430px  
-        }
-        #save{
+        #sav{
             background-color: rgb(255,23,68);
             color: white;
             width:180px;
@@ -92,165 +65,90 @@
             border: 0;
             margin:30px
         }
-        #Cancel{
-            color: rgb(255,23,68) ;
-            border:0;
-            background-color: transparent;
-            cursor: pointer;
+        #lasDiv{
+            display: flex;
+            justify-content: space-between;
+        
+            margin-top: 50px;
         }
-        .checkBox{
-            border-radius: 50%;
-            width:50px;
-            cursor: pointer;
+        .box13{
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+            
         }
-        .addaddress>b{
-            border:2px solid black;
-            border-radius: 50%;
-            padding:1px 5px
+        .box23{
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+            
         }
-        .box1{
+        .box33{
             display: flex;
             justify-content: space-between;
             line-height: 10px;
         }
-        .box2{
+        .box43{
             display: flex;
             justify-content: space-between;
             line-height: 10px;
-        }
-        .free{
-            color: green;
-            font-weight: bold;
-        }
-        .box3{
-            display: flex;
-            justify-content: space-between;
-            line-height: 10px;
-        }
-        .box4{
-            display: flex;
-            justify-content: space-between;
-            line-height: 10px;
-        }
-        .free1{
-            color: green;
-        }
-        .free3{
-            font-weight: lighter;
+            
         }
         .box5{
             display: flex;
             justify-content: space-between;
+        
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div id="con3">
-        <div id="con4">
-            <h1>CheckOut</h1>
-            <form id="form1">
-                
-                <div id="topDiv">
+    
+    <div id="con8">
+        
+        <div id="con9">
+            
+            <div id="topiv">
                  
-                 <h3 class="addaddress"><b>1</b> Add Address</h3>
+                <h3 class="addaddress"><b>1</b> Add Address</h3>
+               
+               <h5 class="newadd">Confirm Address</h5>
+               </div>
+               <div>
+                <input class="checBox"  id="Home" type="checkbox" >
+                <label> <b>Home</b></label>
+               </div>
+               <div id="lasDiv">
+                   <h1></h1>
+                <button id="sav"><b>Continue</b></button>
                 
-                <button id="clear">Clear all</button>
-                </div>
-                
-                    
-                   <input class="width" id="pin" type="number" placeholder="Enter your PIN code*"/>
-                   <input  id="firstName" type="text"  placeholder="First Name*"/>
-                   <input id="lastName"  type ="text"  placeholder="Last Name*"/>
-                   <input class="width" id="city" type="text" placeholder="City/distict*"/>
-                   <input id="Address"  type="text"  placeholder="Address*"/>
-                   <div id="width1">
-                   <input class="width" id="state"  type="text"  placeholder="State"/>
-                   <p>
-                   <span>Character Limit : 120</span>
-                   <br> <span>Special characters allowed are - # & ( ) ' ' . , \ / + _</span>
-                </p>
+               
             </div>
-            
-                   <select >
-                       <option>Landmark</option>
-                   </select>
-                  
-                   <input class="width" id="mobNo" type="number"  placeholder="Phone number*"/>
-            
-            
-                   <div>
-                    <input class="checkBox"  id="Home" type="checkbox" >
-                    <label > Home</label>
-                    <input class="checkBox" id= "office" type="checkbox" >
-                    <label for="office"> Office</label>
-                 </div>
-                 <hr>
-                 <input class="checkBox" id="defaulAdd" type="checkbox" >
-                 <label for="defaultAdd"> I have a bike</label>
-            
-              <div id="lastDiv">
-                  <button id="Cancel"><b>Cancel</b></button>
-                  <input id="save"  type="submit"></input>
-                 
-              </div>
-                </form>
         </div>
-        <div id="con5">
-            <div class="box1">
+        <div id="con10">
+            <div class="box13">
                 <p>Bag Total</p>
-                <p>₹4499.00</p>
+                
             </div>
-            <div class="box2">
+            <div class="box23">
                 <p>Shipping Charge</p>
-                <p class="free">FREE</p>
+                
             </div> 
-            <div class="box3">
+            <div class="box33">
                 <p>Bag Subtotal</p>
-                <p>₹4499.00</p>
-            </div>
-            <div class="box4">
-                <p>Product Discounts</p>
-                <p>₹2250.00</p>
-            </div> 
-            <p class="free1">You will save ₹2250.00 on this order</p>
-            <div class="box5">
-            <h3>Total Payable</h3>
-            <h3 class="free3"> ₹2250.00</h3>
-            </div> 
+                
         </div>
+        <div class="box43">
+            <p>Product Discounts</p>
+            
+        </div> 
+        <div class="box5">
+            <h3>Total Payable</h3>
+            
+            </div> 
     </div>
 </body>
 </html>
 <script>
-document.querySelector("#form1").addEventListener("submit",addAddress)
-var Address= JSON.parse(localStorage.getItem("userdata")) || [];
- function addAddress(event){
-
-    event.preventDefault();
-
-    var pincode  = document.querySelector("#pin").value;
-    var firstname = document.querySelector("#firstName").value;
-    var lastname = document.querySelector("#lastName").value;
-    var citi  = document.querySelector("#city").value;
-    var address= document.querySelector("#Address").value;
-    var state= document.querySelector("#state").value;
-    var mobile= document.querySelector("#mobNo").value;
-
-    var Add={
-        pincode: pincode,
-        firstname: firstname,
-        lastname: lastname,
-        citi: citi,
-        address: address,
-        state:state,
-        mobile:mobile,
-    };
-    Address.push(Add);
-    localStorage.setItem("userdata",JSON.stringify(Address));
-   window.location.href="address.html"; 
- }
- 
-
-
+    console.log(JSON.parse(localStorage.getItem("userdata")));
 </script>
-
