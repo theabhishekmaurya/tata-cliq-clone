@@ -231,7 +231,7 @@ margin-left: 10px;
     margin: 0vh;
     border:none;
   }
-  #top{
+  /* #top{
   
   }
   #top>img {
@@ -242,8 +242,40 @@ margin-left: 10px;
   
   #main img:hover {
     cursor: pointer;
+  } */
+
+  body{
+    overflow-x: hidden;
+    padding: 0%;
+    margin: 0%;
   }
+
+.slider{
+  content: url(1.jpg);
+  width: 100%;
+  overflow-x: hidden;
+  animation: slide 24s infinite;
+  cursor: pointer;
+}
   
+
+@keyframes slide{
+  20%{
+    content: url(2.jpg);
+  }
+  40%{
+   content: url(3.jpg);
+ }
+ 60%{
+   content: url(4.jpg);
+ }
+ 80%{
+   content: url(5.jpg);
+ }
+ 100%{
+   content: url(1.jpg);
+ }
+}
   #bottom {
     height: auto;
     width: 100%;
