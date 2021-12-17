@@ -1,154 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
-        #con8{
-            background-color: rgb(236,236,236);
-           padding: 30px;
-           font-family:sans-serif;
-           height: auto;
-           width: 100%;
-           display: flex;
-           
+        #con8 {
+            background-color: rgb(236, 236, 236);
+            padding: 30px;
+            font-family: sans-serif;
+            height: auto;
+            width: 100%;
+            display: flex;
+
+
         }
-        #con9{
-            border-radius: 7px;
-            width:60%;
-            height: 290px;
-            padding: 0px 10px ;
+
+        #con9 {
+            border-radius: 5px;
+            width: 55%;
+            height: 250px;
+            box-sizing: border-box;
+            padding: 10px 25px;
             background-color: white;
-            margin-top: 100px;
-            box-shadow: rgba(100, 100, 111,0.2)0px 7px 29px 0px;
-         margin-left: 70px;
-         
+            margin-top: 70px;
+            box-shadow: rgba(100, 100, 111, 0.2)0px 7px 29px 0px;
+            margin-left: 10%;
+            
+
         }
-        #con10{
+
+        #con10 {
             height: 310px;
-            width: 25%;
-            box-shadow: rgba(100, 100, 111,0.2)0px 7px 29px 0px;
+            width: 22%;
+            border-radius: 5px;
+            box-shadow: rgba(100, 100, 111, 0.2)0px 7px 29px 0px;
             margin-left: 30px;
             background-color: white;
             padding: 15px;
-            margin-top: 100px;
-            margin-left: 20px;
+            margin-top: 70px;
+            margin-left: 30px;
            
+            box-sizing: border-box;
         }
-        .addadress>b{
-            border:2px solid black;
+
+        #con10>div {
+            display: flex;
+            padding: 0px 10px;
+            font-size: 14px;
+            color: grey;
+        }
+
+        #circle {
+            height: 25px;
+            width: 25px;
+            box-sizing: border-box;
+            padding: 1px 4px;
+            font-size: 17px;
+            font-weight: bold;
+            border: 3px solid black;
             border-radius: 50%;
-            padding:5px 5px;
-        }
-        #topiv{
-            display: flex;
-            justify-content: space-between;
-        }
-        .newadd{
-            color: pink;
-        }
-        .checBox{
-            border-radius: 50%;
-            width:50px;
-            cursor: pointer;
-        }
-        #sav{
-            background-color: rgb(255,23,68);
-            color: white;
-            width:180px;
-            height:40px;
-            border-radius: 20px;
-            cursor: pointer ;
-            border: 0;
-            margin:30px
-        }
-        #lasDiv{
-            display: flex;
-            justify-content: space-between;
-        
-            margin-top: 50px;
-        }
-        .box13{
-            display: flex;
-            justify-content: space-between;
-            line-height: 10px;
-            
-        }
-        .box23{
-            display: flex;
-            justify-content: space-between;
-            line-height: 10px;
-            
-        }
-        .box33{
-            display: flex;
-            justify-content: space-between;
-            line-height: 10px;
-        }
-        .box43{
-            display: flex;
-            justify-content: space-between;
-            line-height: 10px;
-            
-        }
-        .box5{
-            display: flex;
-            justify-content: space-between;
-        
             margin-top: 20px;
+
+        }
+
+        #pinkcircle {
+            height: 22px;
+            width: 22px;
+            box-sizing: border-box;
+            padding: 0% 3px;
+            font-size: 15px;
+            font-weight: bold;
+            border: 0.5px solid grey;
+            border-radius: 50%;
+            margin-top: 20px;
+
+        }
+
+        .homeadd h5 {
+            padding-left: 10px;
+            margin-top: 25px;
+
+            margin-bottom: 0px;
+        }
+
+        .homeadd p {
+            font-size: 14px;
+            margin-top: 3px;
+            margin-left: 8px;
+            line-height: 22px;
+        }
+
+        #circle+h4 {
+            padding-left: 10px;
+            margin-top: 25px;
+
+
+        }
+
+        #topiv {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .newadd {
+            color: crimson;
+            font-size: 15px;
+        }
+
+        #Home+h5 {
+            margin-top: 5%;
+        }
+
+        #Home {
+            margin-top: 5%;
+
+        }
+
+        .checBox {
+            border-radius: 50%;
+            width: 50px;
+            cursor: pointer;
+            margin-left: 0vh;
+        }
+
+        #sav {
+            background-color: rgb(255, 23, 68);
+            color: white;
+            width: 130px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            margin-left: 81%;
+            font-size: 14px;
+
+
+        }
+
+        /* #lasDiv {
+            display: flex;
+            justify-content: space-between;
+border: 1px solid red;
+            margin-top: 50px;
+        } */
+
+        .box13 {
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+
+        }
+
+        .box23 {
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+
+        }
+
+        .box33 {
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+        }
+
+        .box43 {
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+
+        }
+
+        .box5 {
+            display: flex;
+            justify-content: space-between;
+            font-family: sans-serif;
+            margin-top: 20px;
+        }
+
+        p,
+        span {
+            font-family: sans-serif;
+        }
+
+        #con8+span {
+            margin-left: 68.5%;
+            font-family: sans-serif;
         }
     </style>
 </head>
-<body>
-    
-    <div id="con8">
-        
-        <div id="con9">
-            
-            <div id="topiv">
-                 
-                <h3 class="addaddress"><b>1</b> Add Address</h3>
-               
-               <h5 class="newadd">Confirm Address</h5>
-               </div>
-               <div>
-                <input class="checBox"  id="Home" type="checkbox" >
-                <label> <b>Home</b></label>
-               </div>
-               <div id="lasDiv">
-                   <h1></h1>
+
+<body >
+    <div style="background-color: rgb(236, 236, 236);height: 600px;">
+        <div id="con8">
+
+            <div id="con9">
+
+                <div id="topiv">
+                    <div style="display: flex;">
+                        <div id="circle">1</div>
+                        <h4>Confirm adress</h4>
+                    </div>
+
+                    <p class="newadd">Add new adress</>
+
+                </div>
+                <div style="display: flex;">
+                    <div style="display: flex;">
+                        <div id="pinkcircle"></div>
+                        <div class="homeadd">
+                            <h5>Home</h5>
+                            <p><span>HNO5100VillBommena</span>Telangana <span>505306
+                                    <br>
+                                </span>ph.9100373829<span></span></p>
+                        </div>
+
+                    </div>
+
+                </div>
                 <button id="sav"><b>Continue</b></button>
-                
-               
+
             </div>
-        </div>
-        <div id="con10">
-            <div class="box13">
-                <p>Bag Total</p>
-                
+            <div></div>
+            <div id="con10">
+                <div class="box13">
+                    <p>Bag Total</p>
+                    <p>₹1985.00</p>
+                </div>
+                <div class="box23">
+                    <p>Shipping Charge</p>
+                    <p style="color:seagreen ;font-size: 15px;font-weight: bold;">FREE</p>
+                </div>
+                <div class="box33">
+                    <p>Bag Subtotal</p>
+                    <p>₹1985.00</p>
+                </div>
+                <div class="box43">
+                    <p>Product Discounts</p>
+                    <p>-₹1036.00</p>
+
+                </div>
+                <div style="color:seagreen ;">
+                    <p>You will save <span>₹1036.00</span> on this order</p>
+                </div>
+                <hr>
+                <div class="box5">
+                    <h2 style="color: darkslategray;">Total Payable</h2>
+                    <p style="color: black;font-size: 20px;">₹949.00</p>
+                </div>
             </div>
-            <div class="box23">
-                <p>Shipping Charge</p>
-                
-            </div> 
-            <div class="box33">
-                <p>Bag Subtotal</p>
-                
+
         </div>
-        <div class="box43">
-            <p>Product Discounts</p>
-            
-        </div> 
-        <div class="box5">
-            <h3>Total Payable</h3>
-            
-            </div> 
+        <span style="padding: 0px 15px; display: flex;">
+             <img src="https://www.tatacliq.com/src/cart/components/img/lock.cb17b4348d63.svg" alt="" height="35px">
+                <span style="color: grey;padding-left: 15px;font-size: 12px;line-height: 17px;">Safe and secure payments. Easy returns. 100% <br>Authentic products.</span>
+            </span>
+
     </div>
+
+
+
+
+
+
+
+
 </body>
+
 </html>
 <script>
+    document.querySelector("#pinkcircle").addEventListener("click", change)
+    function change() {
+        document.querySelector("#pinkcircle").style.border = "2px solid rgb(255, 23, 68)";
+        document.querySelector("#pinkcircle").textContent = "✓";
+        document.querySelector("#pinkcircle").style.color = "2px solid rgb(255, 23, 68)"
+    }
     console.log(JSON.parse(localStorage.getItem("userdata")));
 </script>
