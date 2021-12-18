@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Shopping Site for Electronic Products, Lifestyle, Beauty & Home - Tata CLiQ</title>
     <style>
 .tq{
     width: 25%;
@@ -47,7 +47,7 @@ button{
         <h1>Thank You </h1>
         <h2>Your order is confirmed!</h2>
         <p>we'll send you a shoping confirmation mail as soon as your order shipped.</p>
-        <button>CHECK STATUS</button>
+        <button id="check_status">CHECK STATUS</button>
         <p>if u are facing any issues...</p>
         <button>contact us</button>
         <br>
@@ -56,3 +56,8 @@ button{
 </body>
 
 </html>
+<script>
+    document.querySelector("#check_status").addEventListener("click",function(){
+        window.location.href="loginhomepage.html";
+    })
+</script>
