@@ -45,3 +45,6 @@ document.querySelector("#my_account").addEventListener("click",function(){
 document.querySelector("#casual").addEventListener("click",function(){
     window.location.href="casual_shoe.html"
 })
+document.querySelector("#bag").addEventListener("click",function(){
+    window.location.href="mybag.html"
+})
