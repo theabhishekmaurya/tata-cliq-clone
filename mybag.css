@@ -5,6 +5,7 @@
     height: 700px;
     font-family: arial;
     background: whitesmoke;
+  overflow-x: hidden;
   }
   #topbar {
     display: flex;
