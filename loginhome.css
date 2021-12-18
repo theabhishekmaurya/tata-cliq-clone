@@ -66,6 +66,7 @@
     border: none;
     border-bottom: 1px solid #fff;
     color: white;
+    outline: none;
 }
 .fa-angle-down{
   font-size: 20px;

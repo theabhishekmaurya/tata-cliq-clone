@@ -69,6 +69,7 @@
   border: none;
   border-bottom: 1px solid #fff;
   color: white;
+  outline: none;
 }
 #categories:hover,
 #brands:hover {
