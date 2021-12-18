@@ -69,3 +69,26 @@ document.querySelector("#amount").textContent=oldprice-discprice;
 document.querySelector("#checkOut").addEventListener("click",function(){
     window.location.href="onlybox.html"
 })
+var add=JSON.parse(localStorage.getItem("userdata"));
+document.querySelector("#address").textContent=add[add.length-1].address
+
+document.querySelector("#clear").addEventListener("click",function(){
+  localStorage.removeItem("cart_history");
+  var products=JSON.parse(localStorage.getItem("cart_history")) || [];
+  var oldprice=0,newwprice=0,discprice=0;
+    for(let i=0; i<products.length; i++){
+    let old=+products[i].oldPrice;
+    let newp=+products[i].Newprice;
+    oldprice+=old;
+    newwprice+=newp;
+    discprice=oldprice-newwprice;
+}
+
+document.querySelector(".totalprice").textContent=oldprice
+document.querySelector(".discountprice").textContent=discprice
+document.querySelector(".totalprice2").textContent=oldprice
+document.querySelector(".discountprice2").textContent=discprice
+document.querySelector("#amount").textContent=oldprice-discprice;
+
+  window.location.href="mybag.html";
+})
